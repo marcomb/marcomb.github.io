@@ -1,13 +1,8 @@
 
-<header>
-
-# Marcomb Github Pages
-_Create a site from your GitHub repositories with GitHub Pages._
-
-</header>
-<img src=/images/FB_IMG_1672747576971.jpg alt=celebrate width=300 align=right>
 
 Hallo!
+
+![Thumbnail of Marcomb]("/images/FB_IMG_1672747576971.jpg")
 
 Here's a recap of all the tasks you've accomplished in your repository:
 - You enabled GitHub Pages.
