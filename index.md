@@ -1,7 +1,6 @@
 
 # Marcomb github page
 
-## Hallo
 Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years experience in Project, Research Management and Digital Technologies Consultancy.
 
 ![Marcomb](images/marcomb.png)
