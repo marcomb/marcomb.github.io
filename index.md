@@ -20,9 +20,9 @@ I love future and I need to think about the future.. I don’t want to be domina
 
 # Links
 - [X.Twitter](https://twitter.com/marcomb)
-- [Linkedin] (https://www.linkedin.com/in/marcomb/)
-- [Facebook] (https://www.facebook.com/marcomb)
-- [YouTube] (https://www.youtube.com/channel/UCW5EnzxpFCW1Wh2t8kYq0_w)
+- [Linkedin](https://www.linkedin.com/in/marcomb/)
+- [Facebook](https://www.facebook.com/marcomb)
+- [YouTube](https://www.youtube.com/channel/UCW5EnzxpFCW1Wh2t8kYq0_w)
 - [Personal Blog on Wordpress](https://marcomb.wordpress.com/)
 - email: marcomb@hotmail.com
 - mobile: +393316329971
