@@ -19,7 +19,7 @@ I have many interests and I like everything could be considered “new” even i
 I love future and I need to think about the future.. I don’t want to be dominated by fears.. every kind. Humanity is not negative or positive, it is, and so it goes.
 
 # Links
-- [X-Twitter](https://twitter.com/marcomb)
+- [X.Twitter](https://twitter.com/marcomb)
 - [Linkedin] (https://www.linkedin.com/in/marcomb/)
 - [Facebook] (https://www.facebook.com/marcomb)
 - [YouTube] (https://www.youtube.com/channel/UCW5EnzxpFCW1Wh2t8kYq0_w)
