@@ -2,7 +2,7 @@
 
 Hallo!
 
-![Thumbnail of Marcomb]("/images/FB_IMG_1672747576971.jpg")
+![Thumbnail of Marcomb](images/FB_IMG_1672747576971.jpg)
 
 Here's a recap of all the tasks you've accomplished in your repository:
 - You enabled GitHub Pages.
