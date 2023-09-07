@@ -4,7 +4,7 @@
 _Create a site from your GitHub repositories with GitHub Pages._
 
 </header>
-<img src=/images/marcomb.jpg alt=celebrate width=300 align=right>
+<img src=/images/FB_IMG_1672747576971.jpg alt=celebrate width=300 align=right>
 
 Hallo!
 
