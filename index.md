@@ -3,7 +3,7 @@ Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Ma
 ![Marcomb](images/marcomb.png)
 
 ## Short Bio
-I am the CEO of [TOOL80 srl](https://www.tool80.it), a small PMI providing consultancy in the field of digital encoding, associate with [MPAI Community](https://mpai.community), an international non-profit organisation with the mission is to develop Artificial Intelligence (AI) enabled digital data compression specifications.
+I am the CEO of [TOOL80 srl](https://www.tool80.it), a small company providing consultancy in the field of digital encoding, associate with [MPAI Community](https://mpai.community), an international non-profit organisation with the mission is to develop Artificial Intelligence (AI) enabled digital data compression specifications.
 I am also as freelance an indipendent scientific and technology consultant, providing support to [EU Commission](https://commission.europa.eu/about-european-commission/departments-and-executive-agencies/informatics_en) collaborating with the [Unit T.1 - Joint Research Center in Ispra](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002) in doing research about the adoption of digital technologies jointly with the Public Sector Technology Watch observatory estabilished by EC and publishing reports like this [one](https://publications.jrc.ec.europa.eu/repository/handle/JRC129301)
 
 ## Skills
