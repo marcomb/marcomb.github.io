@@ -2,7 +2,7 @@
 Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years of experience in project management, research management, and digital transformation consulting.
 
 <a href="https://www.linkedin.com/in/marcomb/"><img src="images/marcomb.png" align="left" height="209" width="237" ></a>
-<br>
+<br />
 
 ### Short Bio
 I am the owner of [TOOL80 srl](https://www.tool80.it), a small company providing consultancy in the field of digital encoding, associate with [MPAI Community](https://mpai.community), an international non-profit organisation with the mission is to develop Artificial Intelligence (AI) enabled digital data compression specifications.
