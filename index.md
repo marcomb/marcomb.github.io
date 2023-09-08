@@ -1,7 +1,5 @@
 
 Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years of experience in project management, research management, and digital transformation consulting.
-
-<img src="/images/image1.jpg" alt="marcomb" width=300 align=right>
 <a href="https://www.linkedin.com/in/marcomb/"><img src="images/marcomb.png" align="center" height="209" width="237" ></a>
 
 ### Short Bio
@@ -12,6 +10,7 @@ I am also as freelance an indipendent scientific and technology consultant, prov
 ### Competence
 I am an expert in digital transformation, in particular in the public sector. Distributed systems, artificial intelligence, blockchain, data science, and several types of digital public service implementation. 
 I worked and I still work with data (hopefully open) and several software applications applying open innovation and co-design principles in many different public sector projects.. trying to hack the bureaucracy as much as I could. I have a software engineering background and I am a technology lover, but I developed my career mainly as a consultant, starting with big brands (Telecom and then Microsoft) and going around in several places, not only in Italy. Finally, in 2008, I landed in Trentino, where I set up the family, and I happily stayed there in the heart of the European Alps, in a very nice place to live.
+<img src="/images/image1.jpg" alt="marcomb" width=300 align=right>
 
 ### Interests
 I have several interests, and I like everything that could be considered “new” even if I don’t disregards the past, history and philosophy, and all that other people did in the past. 
