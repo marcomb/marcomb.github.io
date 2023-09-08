@@ -32,10 +32,10 @@ Humanity is not negative or positive, it is, and so it goes.
 - [Personal Blog on Wordpress](https://marcomb.wordpress.com/)
 
 ### Contacts
-- [email: marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
+- email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
 - mobile: +393316329971
 
-
+<br></br>
 
 
 <footer>
