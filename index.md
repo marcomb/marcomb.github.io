@@ -35,6 +35,9 @@ Humanity is not negative or positive, it is, and so it goes.
 - [email: marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
 - mobile: +393316329971
 
+
+
+
 <footer>
 
 &copy; 1969-2023 Marco Combetto 
