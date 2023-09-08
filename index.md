@@ -14,12 +14,14 @@ I am also as freelance an indipendent scientific and technology consultant, prov
 I am an expert in digital transformation, in particular in the public sector. Distributed systems, artificial intelligence, blockchain, data science, and several types of digital public service implementation. 
 I worked and I still work with data (hopefully open) and several software applications applying open innovation and co-design principles in many different public sector projects.. trying to hack the bureaucracy as much as I could. I have a software engineering background and I am a technology lover, but I developed my career mainly as a consultant, starting with big brands (Telecom and then Microsoft) and going around in several places, not only in Italy. Finally, in 2008, I landed in Trentino, where I set up the family, and I happily stayed there in the heart of the European Alps, in a very nice place to live.
 
+
 ### Interests
 I have several interests, and I like everything that could be considered “new” even if I don’t disregards the past, history and philosophy, and all that other people did in the past. 
 I like politics, and I think everybody must contribute to our democracy, to keep it up and running, to shake away populism and demagogies
 social life, new technology, music, cinema, arts… I like everything hides passion and bright ideas. 
 I love future and I need to think about the future.. I don’t want to be dominated by fears.. of any kind. 
 Humanity is not negative or positive, it is, and so it goes.
+
 
 ### Links
 - [X.Twitter](https://twitter.com/marcomb)
@@ -30,7 +32,7 @@ Humanity is not negative or positive, it is, and so it goes.
 - [Personal Blog on Wordpress](https://marcomb.wordpress.com/)
 
 ### Contacts
-- email: marcomb@hotmail.com
+- [email: marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
 - mobile: +393316329971
 
 <footer>
