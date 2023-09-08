@@ -1,6 +1,6 @@
 
 Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years of experience in project management, research management, and digital transformation consulting.
-
+<img src=/images/image1.jpg alt=marcomb width=300 align=right>
 <a href="https://www.linkedin.com/in/marcomb/"><img src="images/marcomb.png" align="center" height="209" width="237" ></a>
 
 ### Short Bio
