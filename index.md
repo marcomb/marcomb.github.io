@@ -1,4 +1,9 @@
 
+<nav>
+  <a href="/">Home</a> |
+  <a href="/services.html">Services</a>
+</nav>
+
 Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years of experience in project management, research management, and digital transformation consulting.
 
 
@@ -31,6 +36,7 @@ Humanity is not negative or positive, it is, and so it goes.
 - [Facebook](https://www.facebook.com/marcomb)
 - [YouTube](https://www.youtube.com/channel/UCW5EnzxpFCW1Wh2t8kYq0_w)
 - [Personal Blog on Wordpress](https://marcomb.wordpress.com/)
+- [Services](services.md)
 
 ### Contacts
 - email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
