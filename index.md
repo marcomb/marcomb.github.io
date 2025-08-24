@@ -10,9 +10,6 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
 
-**Links:** [LinkedIn](https://www.linkedin.com/in/marcomb/), [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
-
-
 ## Services Offered
 
 * [AI and Emerging Tech Advisory for Public Administration](aieme.html) — Strategic and technical guidance to help governments evaluate, adopt, and scale artificial intelligence solutions while ensuring interoperability, security, and responsible use.  
@@ -24,13 +21,10 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 
 ## Links
-- [X.Twitter](https://twitter.com/marcomb)
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
 - [ResearchGate](https://www.researchgate.net/profile/Marco-Combetto)
 - [Google Scholar](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
-- [Facebook](https://www.facebook.com/marcomb)
-- [YouTube](https://www.youtube.com/channel/UCW5EnzxpFCW1Wh2t8kYq0_w)
-- [Personal Blog on Wordpress](https://marcomb.wordpress.com/)
+- [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
 
 ## Contacts
 - email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
