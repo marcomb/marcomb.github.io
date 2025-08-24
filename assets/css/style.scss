@@ -1,18 +1,11 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+/* Import the remote Slate theme correctly */
+@import "jekyll-theme-slate";
 
-/* Slate header */
+/* Header: color + hide title text */
 .page-header {
-  /* colorful gradient */
   background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed);
-  padding: 3rem 0;
 }
-
-/* Hide title text in header if any */
-.project-name,
-.project-tagline,
-.site-title {
-  display: none;
-}
+.project-name, .project-tagline { display: none; }
