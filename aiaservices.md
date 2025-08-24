@@ -22,8 +22,8 @@ Training for civil servants on AI Act requirements and their practical implicati
 Preparation of toolkits and checklists for ongoing compliance monitoring.
 
 ### Deliverables
-Risk classification reports
-Compliance guidelines and procedures
-Procurement templates and evaluation criteria
-Training sessions and toolkits
-Governance model recommendations
+* Risk classification reports
+* Compliance guidelines and procedures
+* Procurement templates and evaluation criteria
+* Training sessions and toolkits
+* Governance model recommendations
