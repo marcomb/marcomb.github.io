@@ -1,7 +1,7 @@
 ## Digital Transformation Program Leadership 
 End-to-end leadership of large-scale digital initiatives in the public sector, ensuring alignment with policy priorities, security standards, and citizen needs.
 
-![AI Act Consultancy](/images/aia_small.png)
+![Digital Transformation Program Leadership ](/images/dtpl_small.png)
 
 Services include:
 1. Opportunity Analysis and Strategy
