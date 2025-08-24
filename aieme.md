@@ -2,7 +2,7 @@
 
 Strategic and technical guidance to support public administrations in the responsible adoption of artificial intelligence and emerging technologies.
 
-![AI and Emerging Tech](/images/eme_tech_small.png)
+![AI and Emerging Tech](/images/eme_tech2_small.png)
 
 Services include:
 1. Policy and Strategy Alignment
