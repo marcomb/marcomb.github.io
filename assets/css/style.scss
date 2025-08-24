@@ -1,11 +1,14 @@
 ---
 ---
-
-/* Import the remote Slate theme correctly */
 @import "jekyll-theme-slate";
 
-/* Header: color + hide title text */
-.page-header {
-  background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed);
+.page-header,
+.header_wrap {                       /* win on all slate variants */
+  background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed) !important;
 }
-.project-name, .project-tagline { display: none; }
+
+.page-header .project-name,
+.page-header .project-tagline,
+.project_title {                     /* repo title fallback */
+  display: none !important;
+}
