@@ -3,7 +3,6 @@
 ![marcomb](images/marcomb.png){:height="180" width="205" align="center"}  
 
 Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.  
-
 - Founder, [TOOL80 srl](https://www.tool80.it)
 - Member, [MPAI Community](https://mpai.community)  
 - Independent Consultant, [European Commission JRC](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002)
@@ -11,9 +10,7 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
 
-**Links:** 
-- [LinkedIn](https://www.linkedin.com/in/marcomb/)
-- [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
+**Links:** [LinkedIn](https://www.linkedin.com/in/marcomb/), [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
 
 
 ## Services Offered
