@@ -1,14 +1,24 @@
 ---
 ---
+
+/* Load Slate CSS first */
 @import "jekyll-theme-slate";
 
+/* Header background (Slate uses .header_wrap; Cayman uses .page-header) */
+.header_wrap,
 .page-header,
-.header_wrap {                       /* win on all slate variants */
+.site-header {
   background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed) !important;
 }
 
+/* Hide the repo title text in the banner */
+.header_wrap .project-name,
+.header_wrap .project-tagline,
 .page-header .project-name,
 .page-header .project-tagline,
-.project_title {                     /* repo title fallback */
+.project_title,
+.site-title,
+header h1,
+header h2 {
   display: none !important;
 }
