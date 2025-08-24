@@ -2,6 +2,8 @@
 
 Design and implementation of digital platforms that enable transparency, data reuse, and collaborative knowledge building for public administrations and stakeholders.
 
+![Knowledge Platforms and Open Data Strategy](/images/kmod_small.png)
+
 Services include:
 1. Open Data Platforms
 Development of secure and scalable platforms for publishing and reusing open data.
