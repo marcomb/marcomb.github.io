@@ -2,6 +2,8 @@
 
 Comprehensive support for upgrading ICT systems in public administrations, ensuring efficiency, security, and scalability.
 
+![ICT Infrastructure Modernization](/images/ictmod_small.png)
+
 Services include
 1. System Architecture and Design
 Analysis and redesign of ICT architectures to meet modern requirements.
