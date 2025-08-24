@@ -4,5 +4,3 @@ plugins:
 
 title: ""          # prevent site.title
 description: ""    # prevent tagline
-
-google_analytics: [G-XZ5Z381EJQ]
