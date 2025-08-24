@@ -2,7 +2,7 @@
 
 Specialized support to help public administrations prepare for and comply with the requirements of the EU Artificial Intelligence Act (AI Act). 
 
-![AI Act Consultancy](/images/aia.png)
+![AI Act Consultancy](/images/aia_small.png)
 
 Services include:
 1. Risk Classification of AI Systems
