@@ -4,8 +4,10 @@
 
 Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.  
 
-- Founder, [TOOL80 srl](https://www.tool80.it) • Member, [MPAI Community](https://mpai.community)  
-- Independent Consultant, [European Commission JRC](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002) • Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
+- Founder, [TOOL80 srl](https://www.tool80.it)
+- Member, [MPAI Community](https://mpai.community)  
+- Independent Consultant, [European Commission JRC](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002)
+- Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
 
