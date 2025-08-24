@@ -25,12 +25,12 @@ I love future and I need to think about the future.. I don’t want to be domina
 Humanity is not negative or positive, it is, and so it goes.
 
 ### Services Offered
-[AI and Emerging Tech Advisory for Public Administration] (aieme.md)
-[AI Act Consultancy](aiaservices.md)
-[Digital Transformation Program Leadership] (dtplead.md)
-[ICT Infrastructure Modernization](itinframod.md)
-[EU Research and Innovation Projects](eurandiprjs.md)
-[Knowledge Platforms and Open Data Strategy](kmandod.md)
+* [AI and Emerging Tech Advisory for Public Administration] (aieme.md)
+* [AI Act Consultancy](aiaservices.md)
+* [Digital Transformation Program Leadership] (dtplead.md)
+* [ICT Infrastructure Modernization](itinframod.md)
+* [EU Research and Innovation Projects](eurandiprjs.md)
+* [Knowledge Platforms and Open Data Strategy](kmandod.md)
 
 ### Links
 - [X.Twitter](https://twitter.com/marcomb)
