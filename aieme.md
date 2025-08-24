@@ -22,8 +22,8 @@ Workshops and capacity-building programs for civil servants and decision-makers.
 Practical toolkits and checklists to support ongoing evaluation and adoption.
 
 ### Deliverables
-AI adoption roadmaps and strategy papers
-Evaluation frameworks for AI and emerging tech use cases
-Interoperability and security compliance guidelines
-Training modules and practical toolkits
-Policy briefs and technical reports
+* AI adoption roadmaps and strategy papers
+* Evaluation frameworks for AI and emerging tech use cases
+* Interoperability and security compliance guidelines
+* Training modules and practical toolkits
+* Policy briefs and technical reports
