@@ -9,6 +9,6 @@ Hallo!
 
 <footer>
 
-&copy; 1969-2023 Marco Combetto
+&copy; 1969-2025 Marco Combetto
 
 </footer>
