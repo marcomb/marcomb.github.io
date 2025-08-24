@@ -47,6 +47,13 @@ Humanity is not negative or positive, it is, and so it goes.
 - email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
 - mobile: +393316329971
 
+### Business Details
+VAT No.: 02635380229
+NAME: MARCO COMBETTO
+BUSINESS TYPE: 620200 - INFORMATION TECHNOLOGY CONSULTING
+TAX REGISTERED OFFICE: MUNICIPALITY: TRENTO PROVINCE: TN ADDRESS: LOCALITA' CERNIDOR N 32
+OWNER'S TAX CODE: CMBMRC69B15A518G 
+
 <br/><br/>
 
 
