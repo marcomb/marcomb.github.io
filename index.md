@@ -11,7 +11,9 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
 
-**Links:** [LinkedIn](https://www.linkedin.com/in/marcomb/) • [Publications](https://publications.jrc.ec.europa.eu/repository/handle/JRC129301)  
+**Links:** 
+- [LinkedIn](https://www.linkedin.com/in/marcomb/)
+- [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
 
 
 ## Services Offered
