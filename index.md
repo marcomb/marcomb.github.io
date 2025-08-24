@@ -23,8 +23,8 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 ## Links
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
 - [ResearchGate](https://www.researchgate.net/profile/Marco-Combetto)
-- [Google Scholar](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
-- [Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)  
+- [EU Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)
+- [Other Publications](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
 
 ## Contacts
 - email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
