@@ -25,12 +25,14 @@ I love future and I need to think about the future.. I don’t want to be domina
 Humanity is not negative or positive, it is, and so it goes.
 
 ### Services Offered
-* [AI and Emerging Tech Advisory for Public Administration](aieme.md). Strategic and technical guidance to help governments evaluate, adopt, and scale artificial intelligence solutions while ensuring interoperability, security, and responsible use.
-* [AI Act Consultancy](aiaservices.md). Specialized support for public administrations in interpreting and implementing the EU AI Act, including risk classification, compliance frameworks, procurement guidelines, and governance mechanisms.
-* [Digital Transformation Program Leadership](dtplead.md).End-to-end management of large-scale digital initiatives for the public sector, from opportunity analysis and funding acquisition to design, deployment, and evaluation of citizen-facing services.
-* [ICT Infrastructure Modernization](itinframod.md). Architecture, migration, and optimization of ICT systems, including cloud adoption (AWS, hybrid), secure identity management, and automation, to enhance efficiency and resilience
-* [EU Research and Innovation Projects](eurandiprjs.md).Expertise in proposal development and technical execution for Horizon Europe, DIGITAL Europe, and other EU-funded programs, bridging innovation policy with applied research.
-* [Knowledge Platforms and Open Data Strategy](kmandod.md). Design and deployment of platforms for data sharing, observatories, and knowledge hubs, enabling transparency, semantic interoperability, and evidence-based decision-making.
+
+* [AI and Emerging Tech Advisory for Public Administration](aieme.md) — Strategic and technical guidance to help governments evaluate, adopt, and scale artificial intelligence solutions while ensuring interoperability, security, and responsible use.  
+* [AI Act Consultancy](aiaservices.md) — Specialized support for public administrations in interpreting and implementing the EU AI Act, including risk classification, compliance frameworks, procurement guidelines, and governance mechanisms.  
+* [Digital Transformation Program Leadership](dtplead.md) — End-to-end management of large-scale digital initiatives for the public sector, from opportunity analysis and funding acquisition to design, deployment, and evaluation of citizen-facing services.  
+* [ICT Infrastructure Modernization](itinframod.md) — Architecture, migration, and optimization of ICT systems, including cloud adoption (AWS, hybrid), secure identity management, and automation, to enhance efficiency and resilience.  
+* [EU Research and Innovation Projects](eurandiprjs.md) — Expertise in proposal development and technical execution for Horizon Europe, DIGITAL Europe, and other EU-funded programs, bridging innovation policy with applied research.  
+* [Knowledge Platforms and Open Data Strategy](kmandod.md) — Design and deployment of platforms for data sharing, observatories, and knowledge hubs, enabling transparency, semantic interoperability, and evidence-based decision-making.  
+
 
 ### Links
 - [X.Twitter](https://twitter.com/marcomb)
