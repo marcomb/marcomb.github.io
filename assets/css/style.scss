@@ -5,8 +5,8 @@
 /* Header color or image */
 #header_wrap {
   /* pick ONE of the two lines below */
-  background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed) !important;
-  /* background: url('/images/header-bg.png') center/cover no-repeat !important; */
+  /* background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed) !important; */
+  background: url('/images/header-bg.png') center/cover no-repeat !important; 
 }
 
 /* Hide banner text (IDs in Slate) */
