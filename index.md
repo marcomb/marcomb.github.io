@@ -1,6 +1,6 @@
 
-Hi, my name is Marco, I am an expert in Digital Transformation and Innovation Management with more than 25 years of experience in project management, research management, and digital transformation consulting.
-
+Hi, my name is Marco
+I am a freelance AI Solution Expert with over 25 years of experience in designing and implementing digital platforms and data architectures. Skilled in translating business requirements into scalable AI-enabled solutions that integrate cloud-native services, data pipelines, and interoperability frameworks. Proven track record in public sector IT adoption, covering solution design, technology selection, and end-to-end deployment in line with governance and security standards. Expertise includes generative and traditional AI, data integration, semantic interoperability, and automation using Python, MongoDB/PostgreSQL, web platforms and microservices, LLMs and cloud services.
 
 <a href="https://www.linkedin.com/in/marcomb/"><img src="images/marcomb.png" alt="marcomb" align="center" height="209" width="237" ></a>
 
