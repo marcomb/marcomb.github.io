@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Legislation Visualizations — online</title>
+<script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<style>
+body{margin:0;background:#0b0e11;color:#e5e7eb;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Arial}
+.left{position:fixed;left:0;top:0;bottom:0;width:340px;background:#141a1f;border-right:1px solid #111827;padding:14px;overflow:auto}
+.right{margin-left:340px;padding:12px}
+h1{font-size:18px;margin:0 0 12px 0}
+.card{background:#141a1f;border:1px solid #111827;border-radius:12px;padding:12px;margin-bottom:12px}
+input[type=file]{width:100%;padding:8px;border:1px solid #334155;border-radius:10px;background:#0b1220;color:#e5e7eb}
+.small{color:#9ca3af;font-size:12px}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+#grid,#net3d{height:calc(100vh - 100px);background:#141a1f;border-radius:12px}
+.tab{padding:8px 12px;background:#1f2937;border:1px solid #111827;border-radius:10px;cursor:pointer}
+.tab.on{background:#3b82f6}
+.chip{padding:6px 10px;border-radius:999px;background:#1f2937;border:1px solid #111827;cursor:pointer}
+.chip.on{background:#2563eb}
+.counter{margin-left:6px;background:#0b1220;padding:2px 6px;border-radius:8px;color:#9ca3af;font-size:12px}
+.bad{color:#fca5a5}
+.good{color:#86efac}
+</style>
+</head>
+<body>
+<div class="left">
+  <h1>CSV viewer</h1>
+  <div class="card">
+    <div class="small">This page auto-loads <code>legislation_for_viewer_safe.csv</code> from the same folder. Or choose a local CSV.</div>
+    <input id="file" type="file" accept=".csv" />
+    <div id="status" class="small">Loading remote CSV…</div>
+  </div>
+  <div class="card">
+    <div class="small">Filters</div>
+    <div class="small">Level</div><div id="level" class="row"></div>
+    <div class="small">Technology</div><div id="tech" class="row"></div>
+  </div>
+  <div class="card">
+    <div class="small">Errors</div>
+    <div id="errors" class="small"></div>
+  </div>
+</div>
+<div class="right">
+  <div class="row"><button id="tab1" class="tab on">2D grid</button><button id="tab2" class="tab">3D network</button></div>
+  <div id="grid"></div>
+  <div id="net3d" style="display:none"></div>
+</div>
+
+<script>
+const by=id=>document.getElementById(id);
+const split=s=>String(s||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean);
+const uniq=a=>[...new Set(a)];
+const truthy=x=>x!==undefined && x!==null && String(x).trim()!=="";
+
+let FULL=[], EDGES=[];
+
+const opts={categoryOrder:["Strategy","Regulation","Instruments"],
+            pillarOrder:["Sustainability","Sovereignty","Values","Competitiveness"]};
+
+function makeChips(values, mountId, onChange){
+  const mount = by(mountId); mount.innerHTML="";
+  values.forEach(v=>{ const el=document.createElement("span"); el.className="chip on"; el.textContent=v.label;
+    const c=document.createElement("span"); c.className="counter"; c.textContent=v.count; el.appendChild(c);
+    el.onclick=()=>{ el.classList.toggle("on"); onChange(); }; v._el=el; mount.appendChild(el); });
+  return values;
+}
+const active = chips => chips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
+
+function buildEdges(rows){
+  const E=[]; const seen=new Set();
+  for(const r of rows){
+    if(r.source && r.target){ const k=r.source+"→"+r.target; if(!seen.has(k)){ E.push({s:r.source,t:r.target}); seen.add(k);} }
+    if(r.name && r.relates_to){ for(const t of r.relates_to){ const k=r.name+"→"+t; if(!seen.has(k)){ E.push({s:r.name,t}); seen.add(k);} } }
+    if(r.parent){ const k=r.parent+"→"+r.name; if(!seen.has(k)){ E.push({s:r.parent,t:r.name}); seen.add(k);} }
+  } return E;
+}
+
+function gridPlot(rows, edges){
+  const el=by("grid");
+  if(!rows.length){ Plotly.react(el, [], {annotations:[{text:"No rows to display",xref:"paper",yref:"paper",x:0.5,y:0.5,showarrow:false,font:{size:16,color:"#9ca3af"}}],
+                         paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)"}); return; }
+  const P=uniq(rows.map(r=>r.pillar)).sort((a,b)=>opts.pillarOrder.indexOf(a)-opts.pillarOrder.indexOf(b));
+  const C=uniq(rows.map(r=>r.category)).sort((a,b)=>opts.categoryOrder.indexOf(a)-opts.categoryOrder.indexOf(b));
+  const pIndex=Object.fromEntries(P.map((p,i)=>[p,i])); const cIndex=Object.fromEntries(C.map((c,i)=>[c,i]));
+  const cells={};
+  const items=rows.map(r=>{ const pi=pIndex[r.pillar]??0, ci=cIndex[r.category]??0, key=pi+"|"+ci;
+    cells[key]=(cells[key]||0)+1; const k=cells[key]; const xi=pi + ((k-1)/Math.max(1,k)-0.5)*0.8;
+    return {...r, x:xi, y:ci};
+  });
+  const XY=Object.fromEntries(items.map(r=>[r.name,[r.x,r.y]]));
+  const edgesTr=[];
+  for(const e of edges){ if(!XY[e.s]||!XY[e.t]) continue; const [x0,y0]=XY[e.s]; const [x1,y1]=XY[e.t];
+    edgesTr.push({type:"scatter",mode:"lines",x:[x0,x1],y:[y0,y1],line:{width:1,color:"#6b7280"},hoverinfo:"skip",showlegend:false});}
+  const shapes=[], texts=[];
+  for(const r of items){
+    shapes.push({type:"rect",x0:r.x-0.45,x1:r.x+0.45,y0:r.y-0.25,y1:r.y+0.25,line:{color:"#0ea5e9",width:1.5},fillcolor:"#1f6feb"});
+    texts.push({x:r.x,y:r.y,text:r.name,showarrow:false,xanchor:"center",yanchor:"middle",font:{size:12,color:"#fff"}});
+  }
+  const layout={paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",margin:{l:40,r:20,t:20,b:40},
+    xaxis:{range:[-0.5,P.length-0.5],tickvals:[...P.keys()],ticktext:P,showgrid:false,zeroline:false,showline:true,linecolor:"#374151",tickfont:{color:"#e5e7eb"}},
+    yaxis:{range:[-0.5,C.length-0.5],tickvals:[...C.keys()],ticktext:C,showgrid:false,zeroline:false,showline:true,linecolor:"#374151",tickfont:{color:"#e5e7eb"}},
+    shapes:shapes,annotations:texts};
+  for(let i=1;i<P.length;i++){shapes.push({type:"line",x0=i-0.5,x1=i-0.5,y0:-0.5,y1:C.length-0.5,line:{color:"#374151",width:1}});}
+  for(let j=1;j<C.length;j++){shapes.push({type:"line",x0:-0.5,x1:P.length-0.5,y0:j-0.5,y1:j-0.5,line:{color:"#374151",width:1}});}
+  const traces=edgesTr.concat([{type:"scatter",mode:"markers",x:items.map(r=>r.x),y:items.map(r=>r.y),marker:{size:1,color:"rgba(0,0,0,0)"},hoverinfo:"skip",showlegend:false}]);
+  Plotly.react(el,traces,layout,{displaylogo:false,responsive:true});
+}
+
+function net3D(rows, edges){
+  const el=by("net3d");
+  if(!rows.length){ Plotly.react(el, [], {annotations:[{text:"No rows to display",xref:"paper",yref:"paper",x:0.5,y:0.5,showarrow:false,font:{size:16,color:"#9ca3af"}}],
+                         paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)"}); return; }
+  const P=uniq(rows.map(r=>r.pillar)).sort((a,b)=>opts.pillarOrder.indexOf(a)-opts.pillarOrder.indexOf(b));
+  const C=uniq(rows.map(r=>r.category)).sort((a,b)=>opts.categoryOrder.indexOf(a)-opts.categoryOrder.indexOf(b));
+  const L=uniq(rows.map(r=>r.level));
+  const pIndex=Object.fromEntries(P.map((p,i)=>[p,i])); const cIndex=Object.fromEntries(C.map((c,i)=>[c,i])); const lIndex=Object.fromEntries(L.map((z,i)=>[z,i]));
+  const jitter=()=> (Math.random()-0.5)*0.35;
+  const items=rows.map(r=>({...r,x:(pIndex[r.pillar]??0)+jitter(),y:(cIndex[r.category]??0)+jitter(),z:(lIndex[r.level]??0)}));
+  const XY=Object.fromEntries(items.map(r=>[r.name,[r.x,r.y,r.z]]));
+  const ex=[],ey=[],ez=[]; for(const e of edges){ if(!XY[e.s]||!XY[e.t]) continue; const [x0,y0,z0]=XY[e.s]; const [x1,y1,z1]=XY[e.t]; ex.push(x0,x1,null); ey.push(y0,y1,null); ez.push(z0,z1,null); }
+  Plotly.react(el,[{type:"scatter3d",mode:"lines",x:ex,y:ey,z:ez,line:{width:2,color:"#6b7280"},hoverinfo:"skip"},
+                      {type:"scatter3d",mode:"markers",x:items.map(r=>r.x),y:items.map(r=>r.y),z:items.map(r=>r.z),text:items.map(r=>r.name),hoverinfo:"text",marker:{size:6, symbol:"square"}}],
+    {scene:{xaxis:{title:"Pillar",tickvals:[...P.keys()],ticktext:P,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
+            yaxis:{title:"Category",tickvals:[...C.keys()],ticktext:C,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
+            zaxis:{title:"Level",tickvals:[...L.keys()],ticktext:L,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
+            camera:{eye:{x:1.6,y:1.4,z:0.9}}},
+     paper_bgcolor:"rgba(0,0,0,0)", margin:{l:0,r:0,t:0,b:0}}, {displaylogo:false,responsive:true});
+}
+
+function applyFilters(levelChips, techChips){
+  const actLevels = levelChips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
+  const actTechs = techChips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
+  const rows = FULL.filter(r=> (actLevels.length? actLevels.includes(r.level):true) &&
+                               (actTechs.length? r.technology.some(t=>actTechs.includes(t)):true));
+  const edges = EDGES.filter(e=> rows.some(r=>r.name===e.s) && rows.some(r=>r.name===e.t));
+  gridPlot(rows, edges); net3D(rows, edges);
+}
+
+by("tab1").onclick=()=>{by("tab1").classList.add("on");by("tab2").classList.remove("on");by("grid").style.display="block";by("net3d").style.display="none";};
+by("tab2").onclick=()=>{by("tab2").classList.add("on");by("tab1").classList.remove("on");by("grid").style.display="none";by("net3d").style.display="block";};
+
+function display(rowsRaw){
+  const cols = Object.keys(rowsRaw[0]||{});
+  const lc = Object.fromEntries(cols.map(c=>[c.toLowerCase(), c]));
+  function pick(list){ for(const k of list){ if(lc[k]) return lc[k]; } return ""; }
+  const nameCol = pick(["name","title","acronym","label"]);
+  const catCol = pick(["category","type"]);
+  const pilCol = pick(["pillar","domain","theme"]);
+  if(!nameCol || !catCol || !pilCol){
+    by("status").innerHTML = '<span class="bad">Missing required columns. Present: '+cols.join(", ")+'</span>';
+    return;
+  }
+  const lvlCol = pick(["level","jurisdiction"]);
+  const techCol = pick(["technology","tags","tech","topic"]);
+  const srcCol = pick(["source","from","src"]);
+  const tgtCol = pick(["target","to","dst"]);
+  const relCol = pick(["relates_to","links","related","relations"]);
+  const parCol = pick(["parent","parent_id"]);
+
+  FULL = rowsRaw.map(r=> ({
+    name: String(r[nameCol]||"").trim(),
+    category: String(r[catCol]||"").trim(),
+    pillar: String(r[pilCol]||"").trim(),
+    level: lvlCol ? String(r[lvlCol]||"All").trim() : "All",
+    technology: techCol ? String(r[techCol]||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean) : [],
+    source: srcCol ? String(r[srcCol]||"").trim() : "",
+    target: tgtCol ? String(r[tgtCol]||"").trim() : "",
+    relates_to: relCol ? String(r[relCol]||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean) : [],
+    parent: parCol ? String(r[parCol]||"").trim() : ""
+  })).filter(r=> truthy(r.name) && truthy(r.category) && truthy(r.pillar));
+
+  EDGES = buildEdges(FULL);
+  const levels = uniq(FULL.map(r=>r.level));
+  const techs = uniq(FULL.flatMap(r=>r.technology));
+
+  const levelChips = makeChips(levels.map(l=>({label:l,count:FULL.filter(r=>r.level===l).length})), "level", ()=>applyFilters(levelChips, techChips));
+  const techChips = makeChips(techs.map(t=>({label:t,count:FULL.filter(r=>r.technology.includes(t)).length})), "tech", ()=>applyFilters(levelChips, techChips));
+
+  by("status").innerHTML = `<span class="good">Loaded ${FULL.length} rows</span> • Columns: ${cols.join(", ")}`;
+  applyFilters(levelChips, techChips);
+}
+
+// load from same-folder CSV on web
+async function tryFetchDefault(){
+  try{
+    const resp = await fetch('legislation_for_viewer_safe.csv', {cache:'no-store'});
+    if(!resp.ok) throw new Error('HTTP '+resp.status);
+    const text = await resp.text();
+    const parsed = Papa.parse(text, {header:true, skipEmptyLines:true, dynamicTyping:false});
+    if(parsed.errors && parsed.errors.length){ console.warn(parsed.errors.slice(0,3)); }
+    display(parsed.data);
+  }catch(e){
+    by("status").textContent = 'Remote CSV not found. Choose a file instead.';
+  }
+}
+tryFetchDefault();
+
+// manual file
+by("file").addEventListener("change", e=>{
+  const file = e.target.files[0]; if(!file) return;
+  by("status").textContent='Parsing CSV…';
+  Papa.parse(file, {header:true, skipEmptyLines:true, dynamicTyping:false,
+    complete:(res)=>display(res.data),
+    error:(err)=>{ by("status").innerHTML='<span class="bad">'+err.message+'</span>'; }
+  });
+});
+</script>
+</body>
+</html>
