@@ -27,7 +27,7 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 - [Other Publications](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
 
 ## Contacts
-- email: [marcomb@hotmail.com](mailto:marcomb@hotmail.com?subject=Request)
+- email: [marco@marcocombetto.com](mailto:marco@marcocombetto.com?subject=Request)
 - mobile: +393316329971
 
 ### Business Details
