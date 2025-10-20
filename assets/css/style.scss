@@ -14,3 +14,42 @@
 #project_tagline {
   display: none !important;
 }
+
+/* Multilanguage support */
+.language-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.language-switcher__btn {
+  appearance: none;
+  border: 1px solid #1f2937;
+  background: #0f172a;
+  color: #f8fafc;
+  padding: 0.4rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.language-switcher__btn:hover {
+  background: #1d4ed8;
+  border-color: #1d4ed8;
+}
+
+.language-switcher__btn.is-active {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #f8fafc;
+}
+
+body[data-language-initialised='true'] [data-language-section] {
+  display: none;
+}
+
+body[data-language-initialised='true'] [data-language-section].is-active {
+  display: block;
+}

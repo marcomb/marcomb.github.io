@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Legislation Visualizations — online</title>
+<title>Legislation Visualizations - online</title>
 <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script defer src="/assets/js/language.js"></script>
 <style>
 body{margin:0;background:#0b0e11;color:#e5e7eb;font-family:ui-sans-serif,system-ui,Segoe UI,Roboto,Arial}
 .left{position:fixed;left:0;top:0;bottom:0;width:340px;background:#141a1f;border-right:1px solid #111827;padding:14px;overflow:auto}
@@ -23,23 +24,31 @@ input[type=file]{width:100%;padding:8px;border:1px solid #334155;border-radius:1
 .counter{margin-left:6px;background:#0b1220;padding:2px 6px;border-radius:8px;color:#9ca3af;font-size:12px}
 .bad{color:#fca5a5}
 .good{color:#86efac}
+.language-switcher{display:flex;justify-content:flex-start;gap:8px;margin-bottom:12px}
+.language-switcher__btn{appearance:none;border:1px solid #1f2937;background:#0f172a;color:#f8fafc;padding:6px 14px;border-radius:999px;font-size:12px;cursor:pointer;transition:background .2s ease,border-color .2s ease}
+.language-switcher__btn:hover{background:#1d4ed8;border-color:#1d4ed8}
+.language-switcher__btn.is-active{background:#2563eb;border-color:#2563eb}
 </style>
 </head>
 <body>
 <div class="left">
-  <h1>CSV viewer</h1>
+  <div class="language-switcher" role="navigation" aria-label="Language selector">
+    <button type="button" class="language-switcher__btn" data-language-toggle="en" aria-pressed="false">English</button>
+    <button type="button" class="language-switcher__btn" data-language-toggle="it" aria-pressed="false">Italiano</button>
+  </div>
+  <h1 id="page-title">CSV viewer</h1>
   <div class="card">
-    <div class="small">This page auto-loads <code>legislation_for_viewer_safe.csv</code> from the same folder. Or choose a local CSV.</div>
+    <div class="small" id="intro-text">This page auto-loads <code>legislation_for_viewer_safe.csv</code> from the same folder. Or choose a local CSV.</div>
     <input id="file" type="file" accept=".csv" />
-    <div id="status" class="small">Loading remote CSV…</div>
+    <div id="status" class="small"></div>
   </div>
   <div class="card">
-    <div class="small">Filters</div>
-    <div class="small">Level</div><div id="level" class="row"></div>
-    <div class="small">Technology</div><div id="tech" class="row"></div>
+    <div class="small" id="filters-label">Filters</div>
+    <div class="small" id="level-label">Level</div><div id="level" class="row"></div>
+    <div class="small" id="technology-label">Technology</div><div id="tech" class="row"></div>
   </div>
   <div class="card">
-    <div class="small">Errors</div>
+    <div class="small" id="errors-label">Errors</div>
     <div id="errors" class="small"></div>
   </div>
 </div>
@@ -50,163 +59,466 @@ input[type=file]{width:100%;padding:8px;border:1px solid #334155;border-radius:1
 </div>
 
 <script>
-const by=id=>document.getElementById(id);
-const split=s=>String(s||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean);
-const uniq=a=>[...new Set(a)];
-const truthy=x=>x!==undefined && x!==null && String(x).trim()!=="";
+(function () {
+  const COPY = {
+    en: {
+      pageTitle: 'Legislation Visualizations - online',
+      header: 'CSV viewer',
+      introHtml: 'This page auto-loads <code>legislation_for_viewer_safe.csv</code> from the same folder. Or choose a local CSV.',
+      filters: 'Filters',
+      level: 'Level',
+      technology: 'Technology',
+      errors: 'Errors',
+      tabGrid: '2D grid',
+      tabNetwork: '3D network',
+      statusLoadingRemote: 'Loading remote CSV...',
+      statusRemoteMissing: 'Remote CSV not found. Choose a file instead.',
+      statusParsing: 'Parsing CSV...',
+      statusLoaded: (rows, cols) => 'Loaded ' + rows + ' rows - Columns: ' + cols.join(', '),
+      statusMissingColumns: (cols) => 'Missing required columns. Present: ' + cols.join(', '),
+      statusParsingError: (message) => message,
+      annotationNoRows: 'No rows to display'
+    },
+    it: {
+      pageTitle: 'Visualizzazioni normative - online',
+      header: 'Visualizzatore CSV',
+      introHtml: 'Questa pagina carica automaticamente <code>legislation_for_viewer_safe.csv</code> dalla stessa cartella. Oppure scegli un CSV locale.',
+      filters: 'Filtri',
+      level: 'Livello',
+      technology: 'Tecnologia',
+      errors: 'Errori',
+      tabGrid: 'Griglia 2D',
+      tabNetwork: 'Rete 3D',
+      statusLoadingRemote: 'Caricamento del CSV remoto...',
+      statusRemoteMissing: 'CSV remoto non trovato. Seleziona un file locale.',
+      statusParsing: 'Analisi del CSV in corso...',
+      statusLoaded: (rows, cols) => 'Caricate ' + rows + ' righe - Colonne: ' + cols.join(', '),
+      statusMissingColumns: (cols) => 'Mancano colonne obbligatorie. Presenti: ' + cols.join(', '),
+      statusParsingError: (message) => message,
+      annotationNoRows: 'Nessuna riga da visualizzare'
+    }
+  };
 
-let FULL=[], EDGES=[];
+  const state = {
+    lang: 'en',
+    copy: COPY.en,
+    status: { key: 'loadingRemote', context: {}, variant: 'neutral' }
+  };
 
-const opts={categoryOrder:["Strategy","Regulation","Instruments"],
-            pillarOrder:["Sustainability","Sovereignty","Values","Competitiveness"]};
+  const by = (id) => document.getElementById(id);
+  const statusEl = by('status');
 
-function makeChips(values, mountId, onChange){
-  const mount = by(mountId); mount.innerHTML="";
-  values.forEach(v=>{ const el=document.createElement("span"); el.className="chip on"; el.textContent=v.label;
-    const c=document.createElement("span"); c.className="counter"; c.textContent=v.count; el.appendChild(c);
-    el.onclick=()=>{ el.classList.toggle("on"); onChange(); }; v._el=el; mount.appendChild(el); });
-  return values;
-}
-const active = chips => chips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
+  const split = (s) => String(s || '').split(/[;|,/]/).map((x) => x.trim()).filter(Boolean);
+  const uniq = (array) => Array.from(new Set(array));
+  const truthy = (value) => value !== undefined && value !== null && String(value).trim() !== '';
 
-function buildEdges(rows){
-  const E=[]; const seen=new Set();
-  for(const r of rows){
-    if(r.source && r.target){ const k=r.source+"→"+r.target; if(!seen.has(k)){ E.push({s:r.source,t:r.target}); seen.add(k);} }
-    if(r.name && r.relates_to){ for(const t of r.relates_to){ const k=r.name+"→"+t; if(!seen.has(k)){ E.push({s:r.name,t}); seen.add(k);} } }
-    if(r.parent){ const k=r.parent+"→"+r.name; if(!seen.has(k)){ E.push({s:r.parent,t:r.name}); seen.add(k);} }
-  } return E;
-}
+  let FULL = [];
+  let EDGES = [];
 
-function gridPlot(rows, edges){
-  const el=by("grid");
-  if(!rows.length){ Plotly.react(el, [], {annotations:[{text:"No rows to display",xref:"paper",yref:"paper",x:0.5,y:0.5,showarrow:false,font:{size:16,color:"#9ca3af"}}],
-                         paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)"}); return; }
-  const P=uniq(rows.map(r=>r.pillar)).sort((a,b)=>opts.pillarOrder.indexOf(a)-opts.pillarOrder.indexOf(b));
-  const C=uniq(rows.map(r=>r.category)).sort((a,b)=>opts.categoryOrder.indexOf(a)-opts.categoryOrder.indexOf(b));
-  const pIndex=Object.fromEntries(P.map((p,i)=>[p,i])); const cIndex=Object.fromEntries(C.map((c,i)=>[c,i]));
-  const cells={};
-  const items=rows.map(r=>{ const pi=pIndex[r.pillar]??0, ci=cIndex[r.category]??0, key=pi+"|"+ci;
-    cells[key]=(cells[key]||0)+1; const k=cells[key]; const xi=pi + ((k-1)/Math.max(1,k)-0.5)*0.8;
-    return {...r, x:xi, y:ci};
+  const opts = {
+    categoryOrder: ['Strategy', 'Regulation', 'Instruments'],
+    pillarOrder: ['Sustainability', 'Sovereignty', 'Values', 'Competitiveness']
+  };
+
+  function renderStatus() {
+    const { key, context, variant } = state.status;
+    let message = '';
+    if (key === 'loadingRemote') {
+      message = state.copy.statusLoadingRemote;
+    } else if (key === 'remoteMissing') {
+      message = state.copy.statusRemoteMissing;
+    } else if (key === 'parsing') {
+      message = state.copy.statusParsing;
+    } else if (key === 'loaded') {
+      const rows = Number(context.rows || 0);
+      const cols = Array.isArray(context.columns) ? context.columns : [];
+      message = state.copy.statusLoaded(rows, cols);
+    } else if (key === 'missingColumns') {
+      const cols = Array.isArray(context.columns) ? context.columns : [];
+      message = state.copy.statusMissingColumns(cols);
+    } else if (key === 'parsingError') {
+      message = state.copy.statusParsingError(String(context.message || ''));
+    }
+
+    if (variant === 'good') {
+      statusEl.innerHTML = '<span class="good">' + message + '</span>';
+    } else if (variant === 'bad') {
+      statusEl.innerHTML = '<span class="bad">' + message + '</span>';
+    } else {
+      statusEl.textContent = message;
+    }
+  }
+
+  function setStatus(key, context, variant) {
+    state.status = {
+      key: key || 'loadingRemote',
+      context: context || {},
+      variant: variant || 'neutral'
+    };
+    renderStatus();
+  }
+
+  function applyCopy(lang) {
+    const nextLang = COPY[lang] ? lang : 'en';
+    state.lang = nextLang;
+    state.copy = COPY[nextLang];
+
+    document.title = state.copy.pageTitle;
+    by('page-title').textContent = state.copy.header;
+    by('intro-text').innerHTML = state.copy.introHtml;
+    by('filters-label').textContent = state.copy.filters;
+    by('level-label').textContent = state.copy.level;
+    by('technology-label').textContent = state.copy.technology;
+    by('errors-label').textContent = state.copy.errors;
+    by('tab1').textContent = state.copy.tabGrid;
+    by('tab2').textContent = state.copy.tabNetwork;
+
+    renderStatus();
+  }
+
+  function makeChips(values, mountId, onChange) {
+    const mount = by(mountId);
+    mount.innerHTML = '';
+    values.forEach((value) => {
+      const el = document.createElement('span');
+      el.className = 'chip on';
+      el.textContent = value.label;
+      const counter = document.createElement('span');
+      counter.className = 'counter';
+      counter.textContent = value.count;
+      el.appendChild(counter);
+      el.onclick = () => {
+        el.classList.toggle('on');
+        onChange();
+      };
+      value._el = el;
+      mount.appendChild(el);
+    });
+    return values;
+  }
+
+  function buildEdges(rows) {
+    const result = [];
+    const seen = new Set();
+    rows.forEach((row) => {
+      if (row.source && row.target) {
+        const key = row.source + '::' + row.target;
+        if (!seen.has(key)) {
+          result.push({ s: row.source, t: row.target });
+          seen.add(key);
+        }
+      }
+      if (row.name && row.relates_to) {
+        row.relates_to.forEach((target) => {
+          const key = row.name + '::' + target;
+          if (!seen.has(key)) {
+            result.push({ s: row.name, t: target });
+            seen.add(key);
+          }
+        });
+      }
+      if (row.parent) {
+        const key = row.parent + '::' + row.name;
+        if (!seen.has(key)) {
+          result.push({ s: row.parent, t: row.name });
+          seen.add(key);
+        }
+      }
+    });
+    return result;
+  }
+
+  function gridPlot(rows, edges) {
+    const el = by('grid');
+    if (!rows.length) {
+      Plotly.react(
+        el,
+        [],
+        {
+          annotations: [
+            {
+              text: state.copy.annotationNoRows,
+              xref: 'paper',
+              yref: 'paper',
+              x: 0.5,
+              y: 0.5,
+              showarrow: false,
+              font: { size: 16, color: '#9ca3af' }
+            }
+          ],
+          paper_bgcolor: 'rgba(0,0,0,0)',
+          plot_bgcolor: 'rgba(0,0,0,0)'
+        }
+      );
+      return;
+    }
+    const pillars = uniq(rows.map((row) => row.pillar)).sort(
+      (a, b) => opts.pillarOrder.indexOf(a) - opts.pillarOrder.indexOf(b)
+    );
+    const categories = uniq(rows.map((row) => row.category)).sort(
+      (a, b) => opts.categoryOrder.indexOf(a) - opts.categoryOrder.indexOf(b)
+    );
+    const pillarIndex = Object.fromEntries(pillars.map((pillar, idx) => [pillar, idx]));
+    const categoryIndex = Object.fromEntries(categories.map((category, idx) => [category, idx]));
+    const cells = {};
+    const items = rows.map((row) => {
+      const pIdx = pillarIndex[row.pillar] || 0;
+      const cIdx = categoryIndex[row.category] || 0;
+      const key = pIdx + '|' + cIdx;
+      cells[key] = (cells[key] || 0) + 1;
+      const count = cells[key];
+      const x = pIdx + ((count - 1) / Math.max(1, count) - 0.5) * 0.8;
+      return { ...row, x: x, y: cIdx };
+    });
+    const coordinates = Object.fromEntries(items.map((item) => [item.name, [item.x, item.y]]));
+    const edgeTraces = [];
+    edges.forEach((edge) => {
+      if (!coordinates[edge.s] || !coordinates[edge.t]) {
+        return;
+      }
+      const [x0, y0] = coordinates[edge.s];
+      const [x1, y1] = coordinates[edge.t];
+      edgeTraces.push({
+        type: 'scatter',
+        mode: 'lines',
+        x: [x0, x1],
+        y: [y0, y1],
+        line: { width: 1, color: '#6b7280' },
+        hoverinfo: 'skip',
+        showlegend: false
+      });
+    });
+    const nodeTrace = {
+      type: 'scatter',
+      mode: 'markers+text',
+      x: items.map((item) => item.x),
+      y: items.map((item) => item.y),
+      text: items.map((item) => item.name),
+      marker: {
+        size: 14,
+        color: '#3b82f6',
+        line: { width: 1, color: '#1e293b' }
+      },
+      textposition: 'top center',
+      textfont: { color: '#e5e7eb', size: 10 },
+      hovertemplate: '%{text}<extra></extra>'
+    };
+    Plotly.react(
+      el,
+      [...edgeTraces, nodeTrace],
+      {
+        xaxis: {
+          tickvals: pillars.map((_, idx) => idx),
+          ticktext: pillars,
+          color: '#9ca3af',
+          gridcolor: '#1f2937',
+          zeroline: false
+        },
+        yaxis: {
+          tickvals: categories.map((_, idx) => idx),
+          ticktext: categories,
+          color: '#9ca3af',
+          gridcolor: '#1f2937',
+          zeroline: false
+        },
+        margin: { l: 40, r: 20, t: 20, b: 40 },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        plot_bgcolor: 'rgba(0,0,0,0)'
+      },
+      { displaylogo: false, responsive: true }
+    );
+  }
+
+  function net3D(rows, edges) {
+    const el = by('net3d');
+    if (!rows.length) {
+      Plotly.react(el, [], { paper_bgcolor: 'rgba(0,0,0,0)' });
+      return;
+    }
+    const nodes = rows.map((row, idx) => ({
+      id: row.name,
+      idx: idx,
+      pillar: row.pillar,
+      category: row.category
+    }));
+    const nodeIndex = Object.fromEntries(nodes.map((node, idx) => [node.id, idx]));
+    const edgePairs = edges
+      .map((edge) => [nodeIndex[edge.s], nodeIndex[edge.t]])
+      .filter(([from, to]) => from !== undefined && to !== undefined);
+    const coords = nodes.map((node) => ({
+      x: opts.pillarOrder.indexOf(node.pillar) * 2,
+      y: opts.categoryOrder.indexOf(node.category) * 2,
+      z: node.idx * 0.3
+    }));
+    const edgeTrace = {
+      type: 'scatter3d',
+      mode: 'lines',
+      x: edgePairs.flatMap(([from]) => [coords[from].x, coords[from].x, null]),
+      y: edgePairs.flatMap(([from, to]) => [coords[from].y, coords[to].y, null]),
+      z: edgePairs.flatMap(([from, to]) => [coords[from].z, coords[to].z, null]),
+      line: { color: '#64748b', width: 2 },
+      hoverinfo: 'none'
+    };
+    const nodeTrace = {
+      type: 'scatter3d',
+      mode: 'markers+text',
+      x: coords.map((coord) => coord.x),
+      y: coords.map((coord) => coord.y),
+      z: coords.map((coord) => coord.z),
+      text: nodes.map((node) => node.id),
+      marker: { size: 5, color: '#3b82f6' },
+      textfont: { color: '#e5e7eb', size: 9 },
+      hovertemplate: '%{text}<extra></extra>'
+    };
+    Plotly.react(
+      el,
+      [edgeTrace, nodeTrace],
+      {
+        scene: {
+          xaxis: { color: '#9ca3af', backgroundcolor: 'rgba(0,0,0,0)', gridcolor: '#1f2937' },
+          yaxis: { color: '#9ca3af', backgroundcolor: 'rgba(0,0,0,0)', gridcolor: '#1f2937' },
+          zaxis: { color: '#9ca3af', backgroundcolor: 'rgba(0,0,0,0)', gridcolor: '#1f2937' },
+          camera: { eye: { x: 1.6, y: 1.4, z: 0.9 } }
+        },
+        paper_bgcolor: 'rgba(0,0,0,0)',
+        margin: { l: 0, r: 0, t: 0, b: 0 }
+      },
+      { displaylogo: false, responsive: true }
+    );
+  }
+
+  function applyFilters(levelChips, techChips) {
+    const activeLevels = levelChips.filter((chip) => chip._el.classList.contains('on')).map((chip) => chip.label);
+    const activeTech = techChips.filter((chip) => chip._el.classList.contains('on')).map((chip) => chip.label);
+    const rows = FULL.filter(
+      (row) =>
+        (activeLevels.length ? activeLevels.includes(row.level) : true) &&
+        (activeTech.length ? row.technology.some((tech) => activeTech.includes(tech)) : true)
+    );
+    const edges = EDGES.filter(
+      (edge) => rows.some((row) => row.name === edge.s) && rows.some((row) => row.name === edge.t)
+    );
+    gridPlot(rows, edges);
+    net3D(rows, edges);
+  }
+
+  function display(rowsRaw) {
+    const columns = Object.keys(rowsRaw[0] || {});
+    const lower = Object.fromEntries(columns.map((col) => [col.toLowerCase(), col]));
+    const pick = (choices) => {
+      for (const choice of choices) {
+        if (lower[choice]) {
+          return lower[choice];
+        }
+      }
+      return '';
+    };
+    const nameCol = pick(['name', 'title', 'acronym', 'label']);
+    const categoryCol = pick(['category', 'type']);
+    const pillarCol = pick(['pillar', 'domain', 'theme']);
+    if (!nameCol || !categoryCol || !pillarCol) {
+      setStatus('missingColumns', { columns: columns }, 'bad');
+      return;
+    }
+    const levelCol = pick(['level', 'jurisdiction']);
+    const techCol = pick(['technology', 'tags', 'tech', 'topic']);
+    const sourceCol = pick(['source', 'from', 'src']);
+    const targetCol = pick(['target', 'to', 'dst']);
+    const relatesCol = pick(['relates_to', 'links', 'related', 'relations']);
+    const parentCol = pick(['parent', 'parent_id']);
+
+    FULL = rowsRaw
+      .map((row) => ({
+        name: String(row[nameCol] || '').trim(),
+        category: String(row[categoryCol] || '').trim(),
+        pillar: String(row[pillarCol] || '').trim(),
+        level: levelCol ? String(row[levelCol] || 'All').trim() : 'All',
+        technology: techCol ? split(row[techCol]) : [],
+        source: sourceCol ? String(row[sourceCol] || '').trim() : '',
+        target: targetCol ? String(row[targetCol] || '').trim() : '',
+        relates_to: relatesCol ? split(row[relatesCol]) : [],
+        parent: parentCol ? String(row[parentCol] || '').trim() : ''
+      }))
+      .filter((row) => truthy(row.name) && truthy(row.category) && truthy(row.pillar));
+
+    EDGES = buildEdges(FULL);
+    const levels = uniq(FULL.map((row) => row.level));
+    const techs = uniq(FULL.flatMap((row) => row.technology));
+
+    const levelChips = makeChips(
+      levels.map((level) => ({
+        label: level,
+        count: FULL.filter((row) => row.level === level).length
+      })),
+      'level',
+      () => applyFilters(levelChips, techChips)
+    );
+    const techChips = makeChips(
+      techs.map((tech) => ({
+        label: tech,
+        count: FULL.filter((row) => row.technology.includes(tech)).length
+      })),
+      'tech',
+      () => applyFilters(levelChips, techChips)
+    );
+
+    setStatus('loaded', { rows: FULL.length, columns: columns }, 'good');
+    applyFilters(levelChips, techChips);
+  }
+
+  async function tryFetchDefault() {
+    try {
+      const response = await fetch('legislation_for_viewer_safe.csv', { cache: 'no-store' });
+      if (!response.ok) {
+        throw new Error('HTTP ' + response.status);
+      }
+      const text = await response.text();
+      const parsed = Papa.parse(text, { header: true, skipEmptyLines: true, dynamicTyping: false });
+      if (parsed.errors && parsed.errors.length) {
+        console.warn(parsed.errors.slice(0, 3));
+      }
+      display(parsed.data);
+    } catch (error) {
+      setStatus('remoteMissing', {}, 'bad');
+    }
+  }
+
+  by('tab1').onclick = () => {
+    by('tab1').classList.add('on');
+    by('tab2').classList.remove('on');
+    by('grid').style.display = 'block';
+    by('net3d').style.display = 'none';
+  };
+  by('tab2').onclick = () => {
+    by('tab2').classList.add('on');
+    by('tab1').classList.remove('on');
+    by('grid').style.display = 'none';
+    by('net3d').style.display = 'block';
+  };
+
+  by('file').addEventListener('change', (event) => {
+    const file = event.target.files[0];
+    if (!file) {
+      return;
+    }
+    setStatus('parsing');
+    Papa.parse(file, {
+      header: true,
+      skipEmptyLines: true,
+      dynamicTyping: false,
+      complete: (result) => display(result.data),
+      error: (err) => setStatus('parsingError', { message: err.message }, 'bad')
+    });
   });
-  const XY=Object.fromEntries(items.map(r=>[r.name,[r.x,r.y]]));
-  const edgesTr=[];
-  for(const e of edges){ if(!XY[e.s]||!XY[e.t]) continue; const [x0,y0]=XY[e.s]; const [x1,y1]=XY[e.t];
-    edgesTr.push({type:"scatter",mode:"lines",x:[x0,x1],y:[y0,y1],line:{width:1,color:"#6b7280"},hoverinfo:"skip",showlegend:false});}
-  const shapes=[], texts=[];
-  for(const r of items){
-    shapes.push({type:"rect",x0:r.x-0.45,x1:r.x+0.45,y0:r.y-0.25,y1:r.y+0.25,line:{color:"#0ea5e9",width:1.5},fillcolor:"#1f6feb"});
-    texts.push({x:r.x,y:r.y,text:r.name,showarrow:false,xanchor:"center",yanchor:"middle",font:{size:12,color:"#fff"}});
-  }
-  const layout={paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",margin:{l:40,r:20,t:20,b:40},
-    xaxis:{range:[-0.5,P.length-0.5],tickvals:[...P.keys()],ticktext:P,showgrid:false,zeroline:false,showline:true,linecolor:"#374151",tickfont:{color:"#e5e7eb"}},
-    yaxis:{range:[-0.5,C.length-0.5],tickvals:[...C.keys()],ticktext:C,showgrid:false,zeroline:false,showline:true,linecolor:"#374151",tickfont:{color:"#e5e7eb"}},
-    shapes:shapes,annotations:texts};
-  for(let i=1;i<P.length;i++){shapes.push({type:"line",x0=i-0.5,x1=i-0.5,y0:-0.5,y1:C.length-0.5,line:{color:"#374151",width:1}});}
-  for(let j=1;j<C.length;j++){shapes.push({type:"line",x0:-0.5,x1:P.length-0.5,y0:j-0.5,y1:j-0.5,line:{color:"#374151",width:1}});}
-  const traces=edgesTr.concat([{type:"scatter",mode:"markers",x:items.map(r=>r.x),y:items.map(r=>r.y),marker:{size:1,color:"rgba(0,0,0,0)"},hoverinfo:"skip",showlegend:false}]);
-  Plotly.react(el,traces,layout,{displaylogo:false,responsive:true});
-}
 
-function net3D(rows, edges){
-  const el=by("net3d");
-  if(!rows.length){ Plotly.react(el, [], {annotations:[{text:"No rows to display",xref:"paper",yref:"paper",x:0.5,y:0.5,showarrow:false,font:{size:16,color:"#9ca3af"}}],
-                         paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)"}); return; }
-  const P=uniq(rows.map(r=>r.pillar)).sort((a,b)=>opts.pillarOrder.indexOf(a)-opts.pillarOrder.indexOf(b));
-  const C=uniq(rows.map(r=>r.category)).sort((a,b)=>opts.categoryOrder.indexOf(a)-opts.categoryOrder.indexOf(b));
-  const L=uniq(rows.map(r=>r.level));
-  const pIndex=Object.fromEntries(P.map((p,i)=>[p,i])); const cIndex=Object.fromEntries(C.map((c,i)=>[c,i])); const lIndex=Object.fromEntries(L.map((z,i)=>[z,i]));
-  const jitter=()=> (Math.random()-0.5)*0.35;
-  const items=rows.map(r=>({...r,x:(pIndex[r.pillar]??0)+jitter(),y:(cIndex[r.category]??0)+jitter(),z:(lIndex[r.level]??0)}));
-  const XY=Object.fromEntries(items.map(r=>[r.name,[r.x,r.y,r.z]]));
-  const ex=[],ey=[],ez=[]; for(const e of edges){ if(!XY[e.s]||!XY[e.t]) continue; const [x0,y0,z0]=XY[e.s]; const [x1,y1,z1]=XY[e.t]; ex.push(x0,x1,null); ey.push(y0,y1,null); ez.push(z0,z1,null); }
-  Plotly.react(el,[{type:"scatter3d",mode:"lines",x:ex,y:ey,z:ez,line:{width:2,color:"#6b7280"},hoverinfo:"skip"},
-                      {type:"scatter3d",mode:"markers",x:items.map(r=>r.x),y:items.map(r=>r.y),z:items.map(r=>r.z),text:items.map(r=>r.name),hoverinfo:"text",marker:{size:6, symbol:"square"}}],
-    {scene:{xaxis:{title:"Pillar",tickvals:[...P.keys()],ticktext:P,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
-            yaxis:{title:"Category",tickvals:[...C.keys()],ticktext:C,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
-            zaxis:{title:"Level",tickvals:[...L.keys()],ticktext:L,gridcolor:"#1f2937",zerolinecolor:"#1f2937",backgroundcolor:"#0b1220",color:"#e5e7eb"},
-            camera:{eye:{x:1.6,y:1.4,z:0.9}}},
-     paper_bgcolor:"rgba(0,0,0,0)", margin:{l:0,r:0,t:0,b:0}}, {displaylogo:false,responsive:true});
-}
-
-function applyFilters(levelChips, techChips){
-  const actLevels = levelChips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
-  const actTechs = techChips.filter(c=>c._el.classList.contains("on")).map(c=>c.label);
-  const rows = FULL.filter(r=> (actLevels.length? actLevels.includes(r.level):true) &&
-                               (actTechs.length? r.technology.some(t=>actTechs.includes(t)):true));
-  const edges = EDGES.filter(e=> rows.some(r=>r.name===e.s) && rows.some(r=>r.name===e.t));
-  gridPlot(rows, edges); net3D(rows, edges);
-}
-
-by("tab1").onclick=()=>{by("tab1").classList.add("on");by("tab2").classList.remove("on");by("grid").style.display="block";by("net3d").style.display="none";};
-by("tab2").onclick=()=>{by("tab2").classList.add("on");by("tab1").classList.remove("on");by("grid").style.display="none";by("net3d").style.display="block";};
-
-function display(rowsRaw){
-  const cols = Object.keys(rowsRaw[0]||{});
-  const lc = Object.fromEntries(cols.map(c=>[c.toLowerCase(), c]));
-  function pick(list){ for(const k of list){ if(lc[k]) return lc[k]; } return ""; }
-  const nameCol = pick(["name","title","acronym","label"]);
-  const catCol = pick(["category","type"]);
-  const pilCol = pick(["pillar","domain","theme"]);
-  if(!nameCol || !catCol || !pilCol){
-    by("status").innerHTML = '<span class="bad">Missing required columns. Present: '+cols.join(", ")+'</span>';
-    return;
-  }
-  const lvlCol = pick(["level","jurisdiction"]);
-  const techCol = pick(["technology","tags","tech","topic"]);
-  const srcCol = pick(["source","from","src"]);
-  const tgtCol = pick(["target","to","dst"]);
-  const relCol = pick(["relates_to","links","related","relations"]);
-  const parCol = pick(["parent","parent_id"]);
-
-  FULL = rowsRaw.map(r=> ({
-    name: String(r[nameCol]||"").trim(),
-    category: String(r[catCol]||"").trim(),
-    pillar: String(r[pilCol]||"").trim(),
-    level: lvlCol ? String(r[lvlCol]||"All").trim() : "All",
-    technology: techCol ? String(r[techCol]||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean) : [],
-    source: srcCol ? String(r[srcCol]||"").trim() : "",
-    target: tgtCol ? String(r[tgtCol]||"").trim() : "",
-    relates_to: relCol ? String(r[relCol]||"").split(/[;|,/]/).map(x=>x.trim()).filter(Boolean) : [],
-    parent: parCol ? String(r[parCol]||"").trim() : ""
-  })).filter(r=> truthy(r.name) && truthy(r.category) && truthy(r.pillar));
-
-  EDGES = buildEdges(FULL);
-  const levels = uniq(FULL.map(r=>r.level));
-  const techs = uniq(FULL.flatMap(r=>r.technology));
-
-  const levelChips = makeChips(levels.map(l=>({label:l,count:FULL.filter(r=>r.level===l).length})), "level", ()=>applyFilters(levelChips, techChips));
-  const techChips = makeChips(techs.map(t=>({label:t,count:FULL.filter(r=>r.technology.includes(t)).length})), "tech", ()=>applyFilters(levelChips, techChips));
-
-  by("status").innerHTML = `<span class="good">Loaded ${FULL.length} rows</span> • Columns: ${cols.join(", ")}`;
-  applyFilters(levelChips, techChips);
-}
-
-// load from same-folder CSV on web
-async function tryFetchDefault(){
-  try{
-    const resp = await fetch('legislation_for_viewer_safe.csv', {cache:'no-store'});
-    if(!resp.ok) throw new Error('HTTP '+resp.status);
-    const text = await resp.text();
-    const parsed = Papa.parse(text, {header:true, skipEmptyLines:true, dynamicTyping:false});
-    if(parsed.errors && parsed.errors.length){ console.warn(parsed.errors.slice(0,3)); }
-    display(parsed.data);
-  }catch(e){
-    by("status").textContent = 'Remote CSV not found. Choose a file instead.';
-  }
-}
-tryFetchDefault();
-
-// manual file
-by("file").addEventListener("change", e=>{
-  const file = e.target.files[0]; if(!file) return;
-  by("status").textContent='Parsing CSV…';
-  Papa.parse(file, {header:true, skipEmptyLines:true, dynamicTyping:false,
-    complete:(res)=>display(res.data),
-    error:(err)=>{ by("status").innerHTML='<span class="bad">'+err.message+'</span>'; }
+  window.addEventListener('site:language-change', (event) => {
+    applyCopy(event.detail.language);
   });
-});
+
+  setStatus('loadingRemote');
+  applyCopy(window.__siteLanguage || 'en');
+  tryFetchDefault();
+})();
 </script>
 </body>
 </html>
