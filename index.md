@@ -13,7 +13,7 @@ title: Marco Combetto
 Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.  
 - Founder, [TOOL80 srl](https://www.tool80.it)
 - Member, [MPAI Community](https://mpai.community)  
-- Independent Consultant, [European Commission JRC](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002)
+- Independent Consultant, [European Commission JRC](https://joint-research-centre.ec.europa.eu/index_en)
 - Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
@@ -62,7 +62,7 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.  
 - Fondatore, [TOOL80 srl](https://www.tool80.it)
 - Membro, [MPAI Community](https://mpai.community)  
-- Consulente indipendente, [Joint Research Centre della Commissione Europea](https://op.europa.eu/en/web/who-is-who/organization/-/organization/JRC/COM_CRF_18002)
+- Consulente indipendente, [Joint Research Centre della Commissione Europea](https://joint-research-centre.ec.europa.eu/index_en?prefLang=it)
 - Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
 
 **Focus:** adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, modernizzazione del cloud  
