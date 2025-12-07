@@ -8,6 +8,8 @@ permalink: /aiacompliancy.html
 
 <div data-language-section="en" markdown="1">
 
+# What is required for a Public Administration to be compliant when using an AI system?
+
 For an **Italian Public Administration (PA)**, the obligations are **legal, not optional**. 
 
 In practice:
@@ -241,6 +243,9 @@ Skipping even one step = **non-compliant**.
 </div>
 
 <div data-language-section="it" markdown="1" hidden>
+
+# Cosa è necessario per la conformità di una Pubblica Amministrazione nell’utilizzo di un sistema di Intelligenza Artificiale?
+
 Per una **Pubblica Amministrazione (PA) italiana**, gli obblighi sono **legali, non opzionali**.
 
 In pratica:
