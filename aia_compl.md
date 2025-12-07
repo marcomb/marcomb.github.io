@@ -1,4 +1,15 @@
+---
+layout: default
+title: AI Act Compliance
+permalink: /aiacompliancy.html
+---
+
+{% include language-switcher.html %}
+
+<div data-language-section="en" markdown="1">
+
 For an **Italian Public Administration (PA)**, the obligations are **legal, not optional**. 
+
 In practice:
 
 ### 1. Legal framework that applies
@@ -209,7 +220,216 @@ Skipping even one step = **non-compliant**.
 > “EU-approved GPAI in a controlled environment” means **using powerful commercial AI under full legal, infrastructural, and cybersecurity sovereignty**.
 > It is **not innovation freedom**. It is **regulated industrial deployment**.
 
-If you want, I can now explain:
+</div>
 
-* How this changes under the **AI Act risk categories**, or
-* The **exact difference vs. open-source LLMs in PA**.
+<div data-language-section="it" markdown="1" hidden>
+Per una **Pubblica Amministrazione (PA) italiana**, gli obblighi sono **di natura legale, non facoltativi**.
+
+In pratica:
+
+### 1. Quadro normativo applicabile
+
+Una PA italiana deve rispettare:
+
+* **GDPR**
+* **Codice dell’Amministrazione Digitale (CAD)**
+* **Linee guida AgID su AI e cloud**
+* **AI Act (ora adottato a livello UE)**
+* **Codice dei contratti pubblici (Codice degli Appalti)**
+
+Questo significa che **nessuna PA può utilizzare liberamente strumenti di AI pubblici come ChatGPT in modalità SaaS per dati istituzionali**.
+
+---
+
+### 2. Cosa è autorizzata a fare una PA italiana
+
+Una PA italiana può usare l’AI solo se **tutte** le seguenti condizioni sono soddisfatte:
+
+* ✅ **Dati ospitati in UE o in Italia**
+* ✅ **Nessun addestramento sui dati della PA**
+* ✅ **Garanzie contrattuali di riservatezza**
+* ✅ **DPIA (Valutazione d’Impatto sulla Protezione dei Dati) completata**
+* ✅ **Approvazione del DPO**
+* ✅ **Validazione della cybersicurezza (ACN / ISO 27001)**
+* ✅ **Approvvigionamento tramite gara pubblica o accordo quadro**
+
+In assenza di questi requisiti, l’uso è **illecito**.
+
+---
+
+### 3. Cosa fa tipicamente una PA italiana nella pratica
+
+Esistono tre percorsi conformi:
+
+1. **Utilizzare un GPAI approvato in ambito UE tramite un ambiente controllato**
+   * Esempio: Microsoft + OpenAI su cloud UE con garanzie contrattuali
+2. **Utilizzare un LLM open source distribuito internamente**
+   * Controllo totale, costi più alti, massima conformità
+3. **Piattaforme AI verticali, certificate per l’uso nella PA**
+
+---
+
+### 4. Differenza chiave rispetto alle Istituzioni UE
+
+* **Istituzioni UE → Approvazione da parte dell’EDPS**
+* **PA italiana → Approvazione da parte di:**
+  * **DPO**
+  * **AgID**
+  * **ACN (cybersicurezza)**
+  * **Autorità per gli appalti pubblici**
+
+---
+
+### In sintesi (senza eufemismi)
+
+> Una Pubblica Amministrazione **non può legalmente utilizzare alcun sistema di AI** se non è contrattualizzato, ospitato in UE, approvato con DPIA, certificato dal punto di vista della cybersicurezza e acquisito secondo il diritto pubblico.  
+> “Provare strumenti in modo informale” è una **violazione normativa**.
+
+Se vuoi, posso declinare il quadro su:
+* Comuni,
+* Sanità,
+* Giustizia,
+* Scuola.
+
+---
+
+Di seguito il **significato esatto e la struttura operativa** di  
+**“GPAI approvato in UE tramite un ambiente controllato”** per le Pubbliche Amministrazioni.
+
+Nessuna astrazione.
+
+---
+
+## 1. Cosa significa davvero “GPAI approvato in UE”
+
+**Non** significa:
+
+* “Approvato genericamente dall’UE”
+* “Certificato da Bruxelles”
+* “Conforme per definizione”
+
+Significa:
+
+> Un **GPAI commerciale (es. GPT-4/4o, Claude, Gemini)** che è **vincolato contrattualmente, tecnicamente isolato e legalmente validato** per l’uso da parte di enti pubblici.
+
+L’approvazione avviene tramite:
+
+* ✅ **Contratto formale (DPA + SCC)**
+* ✅ **Qualifica di responsabile del trattamento ex art. 28 GDPR**
+* ✅ **Nessun riutilizzo dei dati per l’addestramento**
+* ✅ **Residenza dei dati esclusivamente in UE**
+* ✅ **Certificazione di sicurezza**
+* ✅ **DPIA + validazione del DPO**
+
+In assenza di questi requisiti: **non è approvato**.
+
+---
+
+## 2. Cosa significa tecnicamente “ambiente controllato”
+
+Un ambiente controllato **non è un semplice login su un sito web**. È:
+
+### A. Controllo dell’infrastruttura
+
+Una delle seguenti opzioni:
+
+* **Tenant cloud dedicato in UE** (Azure EU, AWS Europe Sovereign, Google EU)
+* **Cloud sovrano nazionale** (es. Polo Strategico Nazionale – Italia)
+* **Distribuzione on-premise (rara per modelli proprietari)**
+
+Requisiti:
+
+* ✅ Localizzazione fisica dei dati in UE
+* ✅ Solo giurisdizione legale UE
+* ✅ Nessun accesso amministrativo da Paesi terzi
+
+---
+
+### B. Controllo dell’accesso al modello
+
+La PA **non accede al SaaS pubblico**. Utilizza:
+
+* Endpoint API privati
+* Accesso isolato a livello di rete
+* Controllo degli accessi basato sui ruoli (RBAC)
+* Log e audit trail
+
+Questo evita:
+
+* Uso “ombra”
+* Fuga di prompt
+* Contaminazione tra tenant
+
+---
+
+### C. Garanzie sul trattamento dei dati
+
+Vincolate contrattualmente:
+
+* ✅ Prompt e output **non conservati per l’addestramento**
+* ✅ Conservazione dei dati limitata e configurabile
+* ✅ Cifratura a riposo e in transito
+* ✅ Obblighi di notifica in caso di incidente
+
+---
+
+## 3. Esempi reali di questo modello
+
+Si tratta di **implementazioni tipiche**, non di endorsement:
+
+* **Microsoft Azure OpenAI (tenant UE + DPA + clausola no-training)**
+* **Google Vertex AI (regioni UE + configurazione sovrana)**
+* **Claude ospitato in UE tramite contratti enterprise**
+* **Piattaforme AI nazionali integrate nel PSN (Italia)**
+
+Ciò che le rende “approvate” è:
+
+> **Il perimetro legale + tecnico**, non il marchio.
+
+---
+
+## 4. Passaggi di governance obbligatori per una PA italiana
+
+Per attivare un simile ambiente, la PA deve completare **tutti** i seguenti passaggi:
+
+1. **Definizione del caso d’uso e classificazione dei dati**
+2. **Esecuzione della DPIA**
+3. **Ottenimento dell’approvazione del DPO**
+4. **Valutazione del rischio di cybersicurezza (ACN / allineamento ISO 27001)**
+5. **Approvvigionamento tramite gara o accordo quadro**
+6. **Stipula del contratto con:
+   * Data Processing Agreement (DPA)
+   * Clausola di non addestramento
+   * Trattamento esclusivamente in UE
+   * Clausole su responsabilità e data breach**
+7. **Monitoraggio operativo e logging**
+
+Saltare anche un solo passaggio = **non conformità**.
+
+---
+
+## 5. Cosa consente (e cosa no)
+
+### ✅ Consentito:
+
+* Redazione di documenti
+* Supporto alle decisioni interne
+* Automazione dei servizi al cittadino
+* Generazione di codice
+* Sintesi di dati
+
+### ❌ Ancora vietato:
+
+* Inserimento di dati classificati senza autorizzazione
+* Decisioni legali automatizzate senza validazione umana
+* Profilazione biometrica o ad alto rischio senza garanzie AI Act
+* Uso dell’interfaccia pubblica di ChatGPT con dati istituzionali
+
+---
+
+## Conclusione
+
+> “GPAI approvato in UE in un ambiente controllato” significa **utilizzare AI commerciale potente sotto piena sovranità legale, infrastrutturale e di cybersicurezza**.  
+> **Non è libertà di innovazione.** È **adozione industriale regolata**.
+
+</div>
