@@ -73,17 +73,8 @@ There are three compliant paths:
 > An Italian Public Administration **cannot legally use any AI system** unless it is contractually governed, EU-hosted, DPIA-approved, cybersecurity-certified, and procured under public law.
 > “Trying tools informally” is a **regulatory violation**.
 
-If you want, I can map this to:
-
-* municipalities,
-* healthcare,
-* justice sector,
-* or schools.
-
 Below is the **exact meaning and operational structure** of
 **“EU-approved GPAI via a controlled environment”** for Public Administrations.
-
-No abstractions.
 
 ---
 
@@ -280,23 +271,15 @@ Esistono tre percorsi conformi:
 
 ---
 
-### In sintesi (senza eufemismi)
+### In sintesi
 
 > Una Pubblica Amministrazione **non può legalmente utilizzare alcun sistema di AI** se non è contrattualizzato, ospitato in UE, approvato con DPIA, certificato dal punto di vista della cybersicurezza e acquisito secondo il diritto pubblico.  
 > “Provare strumenti in modo informale” è una **violazione normativa**.
-
-Se vuoi, posso declinare il quadro su:
-* Comuni,
-* Sanità,
-* Giustizia,
-* Scuola.
 
 ---
 
 Di seguito il **significato esatto e la struttura operativa** di  
 **“GPAI approvato in UE tramite un ambiente controllato”** per le Pubbliche Amministrazioni.
-
-Nessuna astrazione.
 
 ---
 
