@@ -62,7 +62,7 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.  
 
-- Consulente indipendent
+- Consulente indipendente
 - Insegnante Informatica, [ITT Buonarroti](https://buonarroti.tn.it/)  
 - Founder and Owner, [TOOL80 srl](https://www.tool80.it)
 - Membro, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
