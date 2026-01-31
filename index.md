@@ -11,10 +11,11 @@ title: Marco Combetto
 ![marcomb](images/marcomb.png){:height="180" width="205" align="center"}  
 
 Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.  
-- Founder, [TOOL80 srl](https://www.tool80.it)
+- Independent Consultant
+- Teacher, [ITT Buonarroti](https://buonarroti.tn.it/)  
+- Founder and Owner, [TOOL80 srl](https://www.tool80.it)
 - Member, [MPAI Community](https://mpai.community)  
-- Independent Consultant, [European Commission JRC](https://joint-research-centre.ec.europa.eu/index_en)
-- Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
+- Member, [Public Sector Tech Watch Community](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
 
 **Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
 
@@ -49,7 +50,7 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 
 <footer>
 
-&copy; 1969-2023 Marco Combetto 
+&copy; 1969-2026 Marco Combetto 
 
 </footer>
 </div>
@@ -60,10 +61,13 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 ![marcomb](images/marcomb.png){:height="180" width="205" align="center"}  
 
 Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.  
-- Fondatore, [TOOL80 srl](https://www.tool80.it)
+
+- Consulente indipendent
+- Insegnante Informatica, [ITT Buonarroti](https://buonarroti.tn.it/)  
+- Founder and Owner, [TOOL80 srl](https://www.tool80.it)
+- Membro, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
 - Membro, [MPAI Community](https://mpai.community)  
-- Consulente indipendente, [Joint Research Centre della Commissione Europea](https://joint-research-centre.ec.europa.eu/index_en?prefLang=it)
-- Contributor, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
+
 
 **Focus:** adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, modernizzazione del cloud  
 
@@ -98,7 +102,7 @@ Consulente freelance di intelligenza artificiale e trasformazione digitale con o
 
 <footer>
 
-&copy; 1969-2023 Marco Combetto 
+&copy; 1969-2026 Marco Combetto 
 
 </footer>
 </div>
