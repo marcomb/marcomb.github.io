@@ -52,10 +52,10 @@
 
 ## Programmi da monitorare
 
-- **Interreg Central Europe** – include Trentino (NUTS2 ITH2【6†L1-L5】). Attenzione a futuri bandi (non ce ne sono nell’immediato).  
-- **Interreg Europe** – misure politiche transregionali; future call per progetti pilota o policy learning (su piattaforme dati, AI).  
-- **FESR regionale** – altri avvisi 2026 come digitalizzazione impresa o innovazione smart city (verificare calendario PAT).  
-- **Appalti-Innovativi (PNRR)** – progetti pilota digitali per PA (es. smart urban). Monitorare nuove opportunità DA digitale/MIMIT.  
+- **Interreg Central Europe** – include Trentino (NUTS2 ITH2【6†L1-L5】). Attenzione a futuri bandi (non ce ne sono nell’immediato).  [Interreg CE – Calls](https://www.interreg-central.eu/calls-for-proposals/)
+- **Interreg Europe** – misure politiche transregionali; future call per progetti pilota o policy learning (su piattaforme dati, AI). [Interreg EU – Call for pilot actions for second call projects](https://www.interregeurope.eu/news-events/news/call-for-pilot-actions-for-second-call-projects)
+- **FESR regionale** – altri avvisi 2026 come digitalizzazione impresa o innovazione smart city. [verificare calendario PAT](https://www.provincia.tn.it/Dati-e-statistiche/Dataset/FESR-Calendario-degli-avvisi-e-degli-inviti-a-partecipare)
+- **Appalti-Innovativi (PNRR)** – progetti pilota digitali per PA (es. smart urban). Monitorare nuove opportunità DA digitale/MIMIT. [Appaltinnovativi.GOV – Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
 
 ## Timeline prossimi 12 mesi
 
