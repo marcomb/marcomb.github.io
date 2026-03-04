@@ -9,6 +9,8 @@ permalink: /funding.html
 <div data-language-section="en" markdown="1">
 # EU and Cohesion Funding Opportunities for a GovTech SME in Trento
 
+**Latest update:** 2026-03-04
+
 ## Priority items to monitor
 
 ### 1) Interreg Central Europe
@@ -73,14 +75,6 @@ The following were intentionally removed from this version unless re-verified se
 
 <div data-language-section="it" markdown="1" hidden>
 # Opportunità di finanziamento UE e Coesione per una PMI GovTech a Trento
-
-## Sintesi esecutiva
-
-Questa pagina è una **nota di monitoraggio ripulita sul piano fattuale**.
-Mantiene solo gli elementi verificabili da pagine ufficiali dei programmi e rimuove:
-- scadenze già trascorse presentate come opportunità ancora attive;
-- riferimenti speculativi a futuri bandi senza fonte ufficiale;
-- voci potenzialmente interessanti ma non ricontrollate.
 
 **Ultima verifica:** 2026-03-04
 
