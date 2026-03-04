@@ -15,7 +15,7 @@ permalink: /funding.html
 
 ### 1) Urban ERDF funds: EUI Innovative Actions Call 4
 
-- **Closing date:** ~15/06/2026 with â‚¬60M.
+- **Closing date:** ~15/06/2026 with 60M€ budget.
 - **Requires:** a public administration lead applicant (municipality or province)
 - **Focus:** SPID/IO solutions, data platforms, AI-enabled services
 - **Official link:** [EUI 4th Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
@@ -71,8 +71,8 @@ permalink: /funding.html
 ## Priorit&agrave; da monitorare
 
 ### 1) Urban funds ERDF: EUI Innovative Actions Call 4 
-- **Chiusura:** ~15/06/2026  con 60Mâ 
-- **Richiede:** lead PA (municipalità o provincia)
+- **Chiusura:** ~15/06/2026  con 60Mil budget 
+- **Richiede:** guidato da una PA (municipalità o provincia)
 - **Focus:** soluzioni SPID/IO, piattaforme dati, AI-servizi
 - **Official link:** [EUI - 4a Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
 
