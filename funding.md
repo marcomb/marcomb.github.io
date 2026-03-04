@@ -13,16 +13,18 @@ permalink: /funding.html
 
 ## Priority items to monitor
 
-### 1) Urban ERDF funds: EUI â€“ Innovative Actions Call 4
-- **Closing date:** ~15/06/2026 with â‚¬60M.
-- **Requires:** a public administration lead applicant (city)
-- **Focus:** SPID/IO solutions, data platforms, AI-enabled services
-- **Official link:** [EUI â€“ Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
+### 1) Urban ERDF funds: EUI Innovative Actions Call 4
 
-### 2) Interreg Alpine Space â€“ Capitalisation call
+- **Closing date:** ~15/06/2026 with â‚¬60M.
+- **Requires:** a public administration lead applicant (municipality or province)
+- **Focus:** SPID/IO solutions, data platforms, AI-enabled services
+- **Official link:** [EUI 4th Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
+
+### 2) Interreg Alpine Space 2026 Capitalisation call
+
 - **Deadline:** 30/06/2026
 - **Focus:** transnational digital and sustainability projects (smart mobility, smart public administration services)
-- **Official link:** [Interreg Alpine Space â€“ How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
+- **Official link:** [Interreg Alpine Space How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
 
 ### 3) Interreg Central Europe
 - **Eligibility:** Trentino is included in the programme area as **NUTS2 ITH2 (Provincia Autonoma di Trento)**.
@@ -50,10 +52,10 @@ permalink: /funding.html
 - [PAT - FESR main page](https://www.provincia.tn.it/Argomenti/Europa-e-attivita-internazionali/Europa/Fondo-europeo-di-sviluppo-regionale-FESR)
 - [PAT - Comunicato su Avviso FESR 1/2026](https://www.ufficiostampa.provincia.tn.it/Comunicati/Programma-FESR-3-milioni-di-euro-per-sviluppare-infrastrutture-di-prova-e-sperimentazione)
 
-### 6) Appalti Innovativi
-- **Primary source:** the official **Consultazioni** page is the correct page to monitor.
-- **Interpretation:** this is a **monitoring source**, not automatic evidence of a currently open 2026 procurement line relevant to Trentino.
-- **Why it matters:** the portal includes digital/smart-community themes and remains useful for identifying public-sector innovation demand signals.
+### 6) Innovation Tenders
+- **Primary source:** the official **Consultazioni** page on Gov.it
+- **Interpretation:** this is a **monitoring source**, not automatic evidence of a currently open 2026 procurement line relevant to Trentino
+- **Why it matters:** the portal includes digital/smart-community themes and remains useful for identifying public-sector innovation demand signals
 **Official links**
 - [Appaltinnovativi.GOV - Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
 - [Appaltinnovativi.GOV - Home](https://appaltinnovativi.gov.it/)
@@ -68,16 +70,16 @@ permalink: /funding.html
 
 ## Priorit&agrave; da monitorare
 
-### 1) Urban funds ERDF: EUI â€“ Innovative Actions Call 4 
-- **Chiusura:** ~15/06/2026  con 60Mâ‚¬. 
-- **Richiede:** lead PA (cittÃ )
+### 1) Urban funds ERDF: EUI Innovative Actions Call 4 
+- **Chiusura:** ~15/06/2026  con 60Mâ 
+- **Richiede:** lead PA (municipalità o provincia)
 - **Focus:** soluzioni SPID/IO, piattaforme dati, AI-servizi
-- **Official link:** [EUI - Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
+- **Official link:** [EUI - 4a Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
 
-### 2) Interreg Spazio Alpino Capitalisation call
+### 2) Interreg Spazio Alpino 2026 Capitalisation call
 - **Deadline:** 30/06/2026
 - **Focus:** Progetti transnazionali digitali-sostenibili (mobilitÃ  intelligente, servizi PA smart)
-- **Official link:** [Interreg Alpine Space â€“ How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
+- **Official link:** [Interreg Alpine Space How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
 
 ### 3) Interreg Central Europe
 - **Ammissibilit&agrave;:** Trentino &egrave; incluso nell'area di programma come **NUTS2 ITH2 (Provincia Autonoma di Trento)**.
