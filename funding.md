@@ -64,7 +64,7 @@ permalink: /funding.html
 </div>
 
 <div data-language-section="it" markdown="1" hidden>
-# Opportunit&agrave; di finanziamento UE e Coesione per una PMI GovTech a Trento
+## Opportunit&agrave; di finanziamento UE e Coesione per una PMI GovTech a Trento
 
 **Ultimo aggiornamento:** 2026-03-04
 
