@@ -51,26 +51,15 @@ permalink: /funding.html
 - [Appaltinnovativi.GOV - Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
 - [Appaltinnovativi.GOV - Home](https://appaltinnovativi.gov.it/)
 
-## Recommended actions
 
-1. **Monitor only official programme pages** before planning proposal work.
-2. **Do not treat old deadlines as active opportunities** unless the official page explicitly confirms reopening.
-3. **Prioritize partnership development** for:
-   - public-sector-led cooperation projects;
-   - regional pilots linked to Trentino FESR;
-   - downstream procurement and technical subcontracting.
-4. **Use a rolling review cadence** (monthly minimum) for:
-   - PAT FESR calendar,
-   - Interreg programme call pages,
-   - Appaltinnovativi consultazioni.
+## Programmes to Monitor
 
-## Removed from the previous draft
+- **Interreg Central Europe** – includes Trentino (NUTS2 ITH2). Watch for future calls (there are none in the immediate term). [Interreg Central Europe – Calls for proposals](https://www.interreg-central.eu/calls-for-proposals/)
+- **Interreg Europe** – transregional policy measures; monitor policy learning and pilot initiatives. [Interreg Europe – Call for pilot actions for second call projects](https://www.interregeurope.eu/news-events/news/call-for-pilot-actions-for-second-call-projects)
+- **Regional ERDF** – additional 2026 calls on business digitalisation or smart city innovation. [PAT – ERDF: Calendar of calls and invitations to participate](https://www.provincia.tn.it/Dati-e-statistiche/Dataset/FESR-Calendario-degli-avvisi-e-degli-inviti-a-partecipare)
+- **Innovative Procurement (PNRR)** – digital pilot projects for public administrations (e.g. smart urban initiatives). Monitor new opportunities. [Appaltinnovativi.GOV – Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
 
-The following were intentionally removed from this version unless re-verified separately:
-- detailed deadline timeline;
-- ranked "Top 10" list based on outdated call windows;
-- opportunities already closed but still presented as immediately actionable;
-- programme claims not backed by a current official page.
+
 </div>
 
 <div data-language-section="it" markdown="1" hidden>
@@ -117,4 +106,14 @@ The following were intentionally removed from this version unless re-verified se
 **Link ufficiali**
 - [Appaltinnovativi.GOV - Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
 - [Appaltinnovativi.GOV - Home](https://appaltinnovativi.gov.it/)
+
+
+## Programmi da monitorare
+
+- **Interreg Central Europe** – include Trentino (NUTS2 ITH2). Attenzione a futuri bandi (non ce ne sono nell’immediato). [Interreg Central Europe – Calls for proposals](https://www.interreg-central.eu/calls-for-proposals/)
+- **Interreg Europe** – misure politiche transregionali; monitorare policy learning e iniziative pilota. [Interreg Europe – Call for pilot actions for second call projects](https://www.interregeurope.eu/news-events/news/call-for-pilot-actions-for-second-call-projects)
+- **FESR regionale** – altri avvisi 2026 su digitalizzazione d’impresa o innovazione smart city. [PAT – FESR: Calendario degli avvisi e degli inviti a partecipare](https://www.provincia.tn.it/Dati-e-statistiche/Dataset/FESR-Calendario-degli-avvisi-e-degli-inviti-a-partecipare)
+- **Appalti Innovativi (PNRR)** – progetti pilota digitali per PA (es. smart urban). Monitorare nuove opportunità. [Appaltinnovativi.GOV – Consultazioni](https://appaltinnovativi.gov.it/consultazioni/)
+
+
 </div>
