@@ -4,7 +4,6 @@
 
 - **Urban funds ERDF**: EUI – Innovative Actions Call 4 (chiusura ~15/06/2026) con 60M€. Richiede lead PA (città), utile per soluzioni SPID/IO, piattaforme dati, AI-servizi.
 - **Interreg Spazio Alpino**: call Capitalisation (deadline 30/06/2026). Trento ammissibile (NUTS2 ITH2). Progetti transnazionali digitali-sostenibili (mobilità intelligente, servizi PA smart).
-- **INTERREG CBC**: ALCOTRA bando 4.2 (scadenza 29/05/2026) con OS digitalizzazione; partecipazione indiretta. Marittimo e Grecia–Italia: call attuali (aprile/marzo 2026) out-of-area per Trento, da monitorare come subappalto.
 - **Voucher cloud/cyber (MIMIT)**: registrazione fornitori 04/03–23/04/2026. Budget 150M€, voucher fino a 20k€. OpenCity Labs deve accreditarsi e proporre pacchetti SPID/IO e sicurezza.
 - **PNRR compliance**: SUAP/SUE (scadenza 26/02/2026) e Minerva HR (deadline 23/02/2026). Non sono bandi aperti per PMI, ma generano gare ICT (integrazioni interoperabili).
 - **FESR Trentino**: Avviso 1/2026 infrastrutture sperimentazione (3M€). Aprire a soluzioni pilota come *digital twin* urbano, piattaforme dati multi-ente. Avviso 1/2024 manager (open) per inserire competenze IA/cyber nelle PMI.
@@ -20,9 +19,6 @@
 | **EUI City-to-City Exchanges** | Commissione europea (DG REGIO) | Continuo | UE (città), *Trento eleggibile* | Capacity building | n.d. | Città (lead), partner PA | Tech 3 / Az 4 | Partecipazione indiretta |
 | **URBACT Call for Actions** | URBACT | 17/06/2026 | UE (reti urbane), *Trento ok* | Grant ERDF | Non specificato | Reti di città (lead PA) | Tech 4 / Az 4 | Lead PA richiesto |
 | **Interreg Spazio Alpino – Capitalisation** | Programma Spazio Alpino (JS) | 30/06/2026 | NUTS3 alpino (Trento ok) | Grant ERDF | 1M€ per progetto | Partenariato transnazionale (PA, ricerca) | Tech 4 / Az 4 | Consorzio ampio |
-| **Interreg ALCOTRA (bando 4.2)** | Regione AURA | 29/05/2026 | CBC Italia-Francia (Trento **no**) | Grant ERDF | ~26M€ totale | PA transfrontaliere (subappalto) | Tech 4 / Az 3 | Solo subappalto |
-| **Interreg Marittimo (Piccoli Progetti)** | Regione Toscana | 20/04/2026 | CBC Marittimo (Trento **no**) | Grant ERDF | 3.576.881,25€ totale | PA transfrontalieri (subappalto) | Tech 2 / Az 3 | Solo subappalto |
-| **Interreg GRE-ITA (6th Call)** | Programma GRE-ITA (MA Grecia) | 16/03/2026 | CBC Grecia-Italia (Trento **no**) | Grant ERDF | 9M€ | PA (subappalto) | Tech 3 / Az 2 | Solo subappalto |
 | **b-solutions (DG REGIO)** | Commissione europea (DG REGIO) | 30/06/2026 | Regioni di confine (Trento *ok*) | Assistenza TA | – | Enti pubblici transfrontalieri | Tech 2 / Az 3 | Supporto legale, non grant |
 | **IMPACT CLLD pilots** | Commissione europea (DG REGIO) | 10/04/2026 | Regioni di confine UE (Trento *ok*) | Assistenza TA | – | PA locali, LAG, EGTC | Tech 2 / Az 3 | Solo per progetti CLLD |
 | **I3 Capacity Building (2026)** | EISMEA (EU Innovation) | 19/03/2026 | UE (specialisti PA) | Grant ERDF | 9,8M€ | Intermediari innovazione, cluster | Tech 3 / Az 3 | Target cluster/S3 |
