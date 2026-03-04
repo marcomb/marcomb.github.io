@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 title: EU and Cohesion Funding Opportunities for a GovTech SME in Trento
 permalink: /funding.html
@@ -13,16 +13,16 @@ permalink: /funding.html
 
 ## Priority items to monitor
 
-### 1) Urban ERDF funds: EUI – Innovative Actions Call 4
-- **Closing date:** ~15/06/2026 with €60M.
+### 1) Urban ERDF funds: EUI â€“ Innovative Actions Call 4
+- **Closing date:** ~15/06/2026 with â‚¬60M.
 - **Requires:** a public administration lead applicant (city)
 - **Focus:** SPID/IO solutions, data platforms, AI-enabled services
-- **Official link:** [EUI – Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
+- **Official link:** [EUI â€“ Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
 
-### 2) Interreg Alpine Space – Capitalisation call
+### 2) Interreg Alpine Space â€“ Capitalisation call
 - **Deadline:** 30/06/2026
 - **Focus:** transnational digital and sustainability projects (smart mobility, smart public administration services)
-- **Official link:** [Interreg Alpine Space – How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
+- **Official link:** [Interreg Alpine Space â€“ How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
 
 ### 3) Interreg Central Europe
 - **Eligibility:** Trentino is included in the programme area as **NUTS2 ITH2 (Provincia Autonoma di Trento)**.
@@ -59,6 +59,8 @@ permalink: /funding.html
 - [Appaltinnovativi.GOV - Home](https://appaltinnovativi.gov.it/)
 
 
+</div>
+
 <div data-language-section="it" markdown="1" hidden>
 # Opportunit&agrave; di finanziamento UE e Coesione per una PMI GovTech a Trento
 
@@ -66,16 +68,16 @@ permalink: /funding.html
 
 ## Priorit&agrave; da monitorare
 
-### 1) Urban funds ERDF: EUI – Innovative Actions Call 4 
-- **Chiusura:** ~15/06/2026  con 60M€. 
-- **Richiede:** lead PA (città)
+### 1) Urban funds ERDF: EUI â€“ Innovative Actions Call 4 
+- **Chiusura:** ~15/06/2026  con 60Mâ‚¬. 
+- **Richiede:** lead PA (cittÃ )
 - **Focus:** soluzioni SPID/IO, piattaforme dati, AI-servizi
-- **Official link:** [EUI – Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/
+- **Official link:** [EUI - Fourth Call for Proposals: Innovative Actions](https://www.urban-initiative.eu/calls-proposals/fourth-call-proposals-innovative-actions)
 
 ### 2) Interreg Spazio Alpino Capitalisation call
 - **Deadline:** 30/06/2026
-- **Focus:** Progetti transnazionali digitali-sostenibili (mobilità intelligente, servizi PA smart)
-- **Official link:** [Interreg Alpine Space – How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
+- **Focus:** Progetti transnazionali digitali-sostenibili (mobilitÃ  intelligente, servizi PA smart)
+- **Official link:** [Interreg Alpine Space â€“ How to apply (Capitalisation projects current call)](https://www.alpine-space.eu/how-to-apply/)
 
 ### 3) Interreg Central Europe
 - **Ammissibilit&agrave;:** Trentino &egrave; incluso nell'area di programma come **NUTS2 ITH2 (Provincia Autonoma di Trento)**.
