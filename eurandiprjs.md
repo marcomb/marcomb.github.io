@@ -33,7 +33,7 @@ Services include:
 
 ### Deliverables
 
-* High-quality EU proposals and funding applications  
+* High-quality EU proposals and funding applications: [opportunities in Trento](/reports/interreg_2026.md)
 * Technical and policy-oriented deliverables (reports, platforms, datasets)  
 * Governance and compliance frameworks  
 * Dissemination materials and capacity-building outputs
@@ -66,7 +66,7 @@ I servizi includono:
 
 ### Risultati Deliverabili
 
-* Proposte europee e domande di finanziamento di alta qualit&agrave;  
+* Proposte europee e domande di finanziamento di alta qualit&agrave; [opportunità a Trento](/reports/interreg_2026.md) 
 * Deliverable tecnici e orientati alle politiche (report, piattaforme, dataset)  
 * Framework di governance e conformit&agrave;  
 * Materiali di disseminazione e attivit&agrave; di capacity building
