@@ -32,6 +32,8 @@ Data residency solves where data lives. The EU AI Act regulates what the system 
 
 Data sovereignty is an infrastructure decision. AI Act compliance is a risk-and-governance architecture. One does not automatically deliver the other.
 
+</div>
+
 <div data-language-section="it" markdown="1" hidden>
 ## AI Sovrana != AI Conforme
 
