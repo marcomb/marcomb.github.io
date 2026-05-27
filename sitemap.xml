@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
     <loc>https://www.marcocombetto.com/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/?lang=it"/>
   </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/aiaservices.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/aiaservices.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/aiaservices.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/aiacompliancy.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/aiacompliancy.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/aiacompliancy.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/aiarisks.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/aiarisks.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/aiarisks.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/aiachecklistpa.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/aiachecklistpa.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/aiachecklistpa.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/aieme.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/aieme.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/aieme.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/dtplead.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/dtplead.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/dtplead.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/eurandiprjs.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/eurandiprjs.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/eurandiprjs.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/itinframod.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/itinframod.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/itinframod.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/kmandod.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/kmandod.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/kmandod.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/funding.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.marcocombetto.com/funding.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://www.marcocombetto.com/funding.html?lang=it"/>
+  </url>
+
+  <url>
+    <loc>https://www.marcocombetto.com/reports/funds2026.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

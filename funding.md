@@ -9,7 +9,7 @@ permalink: /funding.html
 <div data-language-section="en" markdown="1">
 ## EU and Cohesion Funding Opportunities for a GovTech SME in Trento
 
-**Latest update:** 2026-03-04
+**Latest update:** 2026-05-27
 
 ## Priority items to monitor
 
@@ -66,7 +66,7 @@ permalink: /funding.html
 <div data-language-section="it" markdown="1" hidden>
 ## Opportunit&agrave; di finanziamento UE e Coesione per una PMI GovTech a Trento
 
-**Ultimo aggiornamento:** 2026-03-04
+**Ultimo aggiornamento:** 2026-05-27
 
 ## Priorit&agrave; da monitorare
 

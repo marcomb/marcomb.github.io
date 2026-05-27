@@ -7,3 +7,24 @@
   gtag('config', 'G-XZ5Z381EJQ');
 </script>
 <script defer src="/assets/js/language.js"></script>
+
+<!-- Hreflang for bilingual content -->
+<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.url }}?lang=en" />
+<link rel="alternate" hreflang="it" href="{{ site.url }}{{ page.url }}?lang=it" />
+<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.url }}" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Marco Combetto" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:title" content="{% if page.title and page.title != '' %}{{ page.title }} — Marco Combetto{% else %}Marco Combetto — AI & Digital Transformation Expert{% endif %}" />
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, AI Act compliance, and cloud-native platforms.{% endif %}" />
+<meta property="og:image" content="{{ site.url }}/images/marcomb.png" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:locale:alternate" content="it_IT" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="{% if page.title and page.title != '' %}{{ page.title }} — Marco Combetto{% else %}Marco Combetto — AI & Digital Transformation Expert{% endif %}" />
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, AI Act compliance, and cloud-native platforms.{% endif %}" />
+<meta name="twitter:image" content="{{ site.url }}/images/marcomb.png" />
