@@ -1,7 +1,6 @@
 ---
 layout: default
 title: AI Act Compliance Checklist
-permalink: /ai-act-checklist.html
 ---
 
 {% include language-switcher.html %}
