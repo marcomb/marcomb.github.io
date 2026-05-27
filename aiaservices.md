@@ -16,7 +16,7 @@ Specialized support to help public administrations prepare for and comply with t
 Services include:
 
 1. **Risk Classification of AI Systems**  
-   Identification and classification of [AI applications](./aiarisks.html) within public services.  
+   Identification and classification of [risks](./aiarisks.html) of AI usage within public services.  
    Determination of whether systems fall under prohibited, high-risk, or limited-risk categories.
 2. **Compliance Frameworks**  
    Development of internal policies and procedures aligned with AI Act obligations.  
@@ -30,6 +30,12 @@ Services include:
 5. **Capacity Building**  
    Training for civil servants on AI Act requirements and their practical implications.  
    Preparation of toolkits and checklists for ongoing compliance monitoring.
+
+###  Resources
+
+* AIA Compliancy  [LINK](./aiacompliancy.html)
+* AIA PA Checklist [link](./aiachecklistpa.html)  
+
 
 ### Deliverables
 
@@ -50,7 +56,7 @@ Supporto specialistico per aiutare le amministrazioni pubbliche a prepararsi e a
 I servizi includono:
 
 1. **Classificazione del rischio dei sistemi di IA**  
-   Identificazione e classificazione delle [applicazioni di IA](./aiarisks.html) nei servizi pubblici.  
+   Identificazione e classificazione dei [rischi](./aiarisks.html) dell'applicazione di IA nei servizi pubblici.  
    Determinazione dell'inquadramento tra categorie vietate, ad alto rischio o a rischio limitato.
 2. **Framework di conformit&agrave;**  
    Sviluppo di politiche e procedure interne allineate agli obblighi dell'AI Act.  
