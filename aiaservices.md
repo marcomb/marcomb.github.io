@@ -65,6 +65,14 @@ I servizi includono:
    Formazione per il personale pubblico sui requisiti dell'AI Act e sulle loro implicazioni pratiche.  
    Preparazione di toolkit e checklist per il monitoraggio continuativo della conformit&agrave;.
 
+
+###  Risorse
+
+* AIA Compliancy  [LINK](./aiacompliancy.html)
+* AIA PA Checklist [link](./aiachecklistpa.html)  
+
+
+
 ### Risultati Deliverabili
 
 * Rapporti di classificazione del rischio  
