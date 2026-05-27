@@ -2,50 +2,270 @@
 ---
 @import "jekyll-theme-slate";
 
-/* Header color or image */
+/* ── HERO ──────────────────────────────────────────────────────── */
 #header_wrap {
-  /* pick ONE of the two lines below */
-  /* background: linear-gradient(90deg,#0044cc,#00c6ff,#6dd5ed) !important; */
   background: url('/images/header-bg.webp') center/cover no-repeat !important;
+  position: relative;
 }
 
-/* Hide banner text (IDs in Slate) */
-#project_title,
+#header_wrap::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0, 18, 60, 0.76) 0%, rgba(0, 0, 0, 0.42) 100%);
+  pointer-events: none;
+}
+
+#header_wrap .inner {
+  position: relative;
+}
+
+#project_title {
+  display: block !important;
+  color: #ffffff !important;
+  font-size: 2.5rem !important;
+  font-weight: 700;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.55);
+  letter-spacing: 0.01em;
+  margin: 0 0 0.35rem !important;
+}
+
 #project_tagline {
-  display: none !important;
+  display: block !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 1rem !important;
+  font-weight: 400;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Multilanguage support */
-.language-switcher {
+/* ── NAV BAR ───────────────────────────────────────────────────── */
+#nav_wrap {
+  background: #0d1b2e;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#site-nav {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.nav-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.05rem;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.62rem 0.6rem;
+  border-radius: 4px;
+  transition: color 0.15s, background 0.15s;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+/* Dropdown */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown__trigger {
+  cursor: default;
+}
+
+.nav-dropdown__menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0d1b2e;
+  min-width: 210px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-top: 2px solid #2563eb;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+  z-index: 200;
+  overflow: hidden;
+}
+
+.nav-dropdown:hover .nav-dropdown__menu {
+  display: block;
+}
+
+.nav-dropdown__menu a {
+  display: block;
+  padding: 0.55rem 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: background 0.15s, color 0.15s;
+}
+
+.nav-dropdown__menu a:hover,
+.nav-dropdown__menu a.active {
+  background: rgba(255, 255, 255, 0.09);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Language buttons */
+.nav-lang {
+  display: flex;
+  gap: 0.35rem;
+  padding-left: 0.85rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+  flex-shrink: 0;
+}
+
+/* ── LANGUAGE SWITCHER BUTTONS ─────────────────────────────────── */
 .language-switcher__btn {
   appearance: none;
-  border: 1px solid #1f2937;
-  background: #0f172a;
-  color: #f8fafc;
-  padding: 0.4rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: transparent;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 0.28rem 0.6rem;
   border-radius: 9999px;
-  font-size: 0.85rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .language-switcher__btn:hover {
-  background: #1d4ed8;
-  border-color: #1d4ed8;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .language-switcher__btn.is-active {
   background: #2563eb;
   border-color: #2563eb;
-  color: #f8fafc;
+  color: #ffffff;
 }
 
+/* ── PROFILE HEADER ────────────────────────────────────────────── */
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.profile-photo {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+  border: 3px solid #ffffff;
+  outline: 2px solid #cbd5e1;
+}
+
+.profile-bio {
+  flex: 1;
+}
+
+.profile-bio p {
+  margin-top: 0;
+}
+
+.profile-bio ul {
+  margin: 0.4rem 0 0.6rem;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 580px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-bio ul {
+    text-align: left;
+  }
+}
+
+/* ── SERVICE CARDS ─────────────────────────────────────────────── */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.25rem 1.35rem;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.15s, border-color 0.2s;
+}
+
+.service-card:hover {
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.13);
+  transform: translateY(-2px);
+  border-color: #2563eb;
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-card__icon {
+  font-size: 1.75rem;
+  line-height: 1;
+  margin-bottom: 0.65rem;
+}
+
+.service-card__title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.45rem;
+}
+
+.service-card__desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.55;
+  flex: 1;
+  margin: 0;
+}
+
+.service-card__cta {
+  display: inline-block;
+  margin-top: 0.85rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* ── LANGUAGE SECTION VISIBILITY ───────────────────────────────── */
 body[data-language-initialised='true'] [data-language-section] {
   display: none;
 }

@@ -4,8 +4,6 @@ title: ICT Infrastructure Modernization
 permalink: /itinframod.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## ICT Infrastructure Modernization 
 

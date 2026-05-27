@@ -4,8 +4,6 @@ title: AI Act Consultancy
 permalink: /aiaservices.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## AI Act Consultancy
 

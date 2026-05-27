@@ -4,8 +4,6 @@ title: AI and Emerging Tech Advisory
 permalink: /aieme.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## AI and Emerging Tech Advisory for Public Administration 
 

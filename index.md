@@ -3,31 +3,69 @@ layout: default
 title: Marco Combetto
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
-# Marco Combetto  
 
-![marcomb](images/marcomb.png){:height="180" width="205" align="center"}  
-
-Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.  
-- Independent Consultant
-- Teacher, [ITT Buonarroti](https://buonarroti.tn.it/)  
-- Founder and Owner, [TOOL80 srl](https://www.tool80.it)
-- Member, [MPAI Community](https://mpai.community)  
-- Member, [Public Sector Tech Watch Community](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
-
-**Focus:** AI adoption, digital platforms, semantic interoperability, cloud modernization  
+<div class="profile-header">
+  <img src="images/marcomb.png" alt="Marco Combetto" class="profile-photo">
+  <div class="profile-bio">
+    <p>Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.</p>
+    <ul>
+      <li>Independent Consultant</li>
+      <li>Teacher, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
+      <li>Founder and Owner, <a href="https://www.tool80.it">TOOL80 srl</a></li>
+      <li>Member, <a href="https://mpai.community">MPAI Community</a></li>
+      <li>Member, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
+    </ul>
+    <p><strong>Focus:</strong> AI adoption, digital platforms, semantic interoperability, cloud modernization</p>
+  </div>
+</div>
 
 ## Services Offered
 
-* [AI and Emerging Tech Advisory for Public Administration](aieme.html) &mdash; Strategic and technical guidance to help governments evaluate, adopt, and scale artificial intelligence solutions while ensuring interoperability, security, and responsible use.  
-* [AI Act Consultancy](aiaservices.html) &mdash; Specialized support for public administrations in interpreting and implementing the EU AI Act, including risk classification, compliance frameworks, procurement guidelines, and governance mechanisms.  
-* [Sovereign AI and AI Act Risks](aiarisks.html) &mdash; Practical guidance to distinguish data sovereignty choices from AI Act obligations, with a clear compliance gap analysis and shared-responsibility model.  
-* [Digital Transformation Program Leadership](dtplead.html) &mdash; End-to-end management of large-scale digital initiatives for the public sector, from opportunity analysis and funding acquisition to design, deployment, and evaluation of citizen-facing services.  
-* [ICT Infrastructure Modernization](itinframod.html) &mdash; Architecture, migration, and optimization of ICT systems, including cloud adoption (AWS, hybrid), secure identity management, and automation, to enhance efficiency and resilience.  
-* [EU Research and Innovation Projects](eurandiprjs.html) &mdash; Expertise in proposal development and technical execution for Horizon Europe, DIGITAL Europe, and other EU-funded programs, bridging innovation policy with applied research.  
-* [Knowledge Platforms and Open Data Strategy](kmandod.html) &mdash; Design and deployment of platforms for data sharing, observatories, and knowledge hubs, enabling transparency, semantic interoperability, and evidence-based decision-making.  
+<div class="services-grid">
+  <a href="aieme.html" class="service-card">
+    <span class="service-card__icon">🤖</span>
+    <div class="service-card__title">AI and Emerging Tech Advisory</div>
+    <p class="service-card__desc">Strategic guidance for governments to evaluate, adopt, and scale AI responsibly.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="aiaservices.html" class="service-card">
+    <span class="service-card__icon">⚖️</span>
+    <div class="service-card__title">AI Act Consultancy</div>
+    <p class="service-card__desc">Expert support for EU AI Act compliance: risk classification, governance, and procurement.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="aiarisks.html" class="service-card">
+    <span class="service-card__icon">🛡️</span>
+    <div class="service-card__title">Sovereign AI and AI Act Risks</div>
+    <p class="service-card__desc">Clarity on data sovereignty vs. AI Act obligations, with gap analysis and shared-responsibility models.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="dtplead.html" class="service-card">
+    <span class="service-card__icon">🏛️</span>
+    <div class="service-card__title">Digital Transformation Leadership</div>
+    <p class="service-card__desc">End-to-end management of large-scale digital initiatives for the public sector.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="itinframod.html" class="service-card">
+    <span class="service-card__icon">☁️</span>
+    <div class="service-card__title">ICT Infrastructure Modernization</div>
+    <p class="service-card__desc">Cloud adoption, secure identity management, and automation for resilient ICT systems.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="eurandiprjs.html" class="service-card">
+    <span class="service-card__icon">🇪🇺</span>
+    <div class="service-card__title">EU Research and Innovation Projects</div>
+    <p class="service-card__desc">Proposal development and execution for Horizon Europe, DIGITAL Europe, and EU-funded programmes.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="kmandod.html" class="service-card">
+    <span class="service-card__icon">📊</span>
+    <div class="service-card__title">Knowledge Platforms and Open Data</div>
+    <p class="service-card__desc">Data-sharing platforms, observatories, and knowledge hubs for transparent governance.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+</div>
 
 ## Links
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
@@ -45,42 +83,73 @@ Freelance AI and Digital Transformation Expert with 25+ years of experience in p
 - BUSINESS TYPE: 620200 - INFORMATION TECHNOLOGY CONSULTING
 - MUNICIPALITY: TRENTO (TN) - ITALY
 - ADDRESS: LOCALITA' CERNIDOR N.32
-- OWNER'S TAX CODE: CMBMRC69B15A518G 
+- OWNER'S TAX CODE: CMBMRC69B15A518G
 
-<br/><br/>
-
-<footer>
-
-&copy; 1969-2026 Marco Combetto 
-
-</footer>
 </div>
 
 <div data-language-section="it" markdown="1" hidden>
-# Marco Combetto  
 
-![marcomb](images/marcomb.png){:height="180" width="205" align="center"}  
-
-Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.  
-
-- Consulente indipendente
-- Insegnante Informatica, [ITT Buonarroti](https://buonarroti.tn.it/)  
-- Founder and Owner, [TOOL80 srl](https://www.tool80.it)
-- Membro, [Public Sector Tech Watch](https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch)  
-- Membro, [MPAI Community](https://mpai.community)  
-
-
-**Focus:** adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, modernizzazione del cloud  
+<div class="profile-header">
+  <img src="images/marcomb.png" alt="Marco Combetto" class="profile-photo">
+  <div class="profile-bio">
+    <p>Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.</p>
+    <ul>
+      <li>Consulente indipendente</li>
+      <li>Insegnante Informatica, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
+      <li>Founder and Owner, <a href="https://www.tool80.it">TOOL80 srl</a></li>
+      <li>Membro, <a href="https://mpai.community">MPAI Community</a></li>
+      <li>Membro, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
+    </ul>
+    <p><strong>Focus:</strong> adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, modernizzazione del cloud</p>
+  </div>
+</div>
 
 ## Servizi Offerti
 
-* [Consulenza su IA e tecnologie emergenti per la Pubblica Amministrazione](aieme.html) &mdash; Guida strategica e tecnica per aiutare le amministrazioni a valutare, adottare e scalare soluzioni di intelligenza artificiale garantendo interoperabilit&agrave;, sicurezza e uso responsabile.  
-* [Consulenza sull'AI Act](aiaservices.html) &mdash; Supporto specialistico per interpretare e attuare l'AI Act dell'UE, includendo classificazione dei rischi, framework di conformit&agrave;, linee guida per gli appalti e meccanismi di governance.  
-* [AI Sovrana e rischi AI Act](aiarisks.html) &mdash; Supporto pratico per distinguere le scelte di sovranit&agrave; dei dati dagli obblighi dell'AI Act, con gap analysis di conformit&agrave; e modello di responsabilit&agrave; condivisa.  
-* [Leadership di programmi di trasformazione digitale](dtplead.html) &mdash; Gestione end-to-end di iniziative digitali su larga scala per il settore pubblico, dall'analisi delle opportunit&agrave; e reperimento dei fondi alla progettazione, implementazione e valutazione dei servizi per i cittadini.  
-* [Modernizzazione delle infrastrutture ICT](itinframod.html) &mdash; Architettura, migrazione e ottimizzazione dei sistemi ICT, compresa l'adozione del cloud (AWS, ibrido), la gestione sicura delle identit&agrave; e l'automazione per migliorare efficienza e resilienza.  
-* [Progetti di ricerca e innovazione europei](eurandiprjs.html) &mdash; Competenze nella stesura di proposte e nell'esecuzione tecnica per Horizon Europe, DIGITAL Europe e altri programmi UE, collegando le politiche di innovazione alla ricerca applicata.  
-* [Piattaforme di conoscenza e strategie open data](kmandod.html) &mdash; Progettazione e sviluppo di piattaforme per la condivisione dei dati, osservatori e knowledge hub che favoriscono trasparenza, interoperabilit&agrave; semantica e decisioni basate sui dati.  
+<div class="services-grid">
+  <a href="aieme.html" class="service-card">
+    <span class="service-card__icon">🤖</span>
+    <div class="service-card__title">Consulenza su IA e tecnologie emergenti</div>
+    <p class="service-card__desc">Guida strategica e tecnica per l'adozione responsabile dell'IA nelle pubbliche amministrazioni.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="aiaservices.html" class="service-card">
+    <span class="service-card__icon">⚖️</span>
+    <div class="service-card__title">Consulenza sull'AI Act</div>
+    <p class="service-card__desc">Supporto specialistico per la conformit&agrave; all'AI Act: classificazione dei rischi, governance e appalti.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="aiarisks.html" class="service-card">
+    <span class="service-card__icon">🛡️</span>
+    <div class="service-card__title">AI Sovrana e rischi AI Act</div>
+    <p class="service-card__desc">Distinzione tra sovranit&agrave; dei dati e obblighi AI Act, con gap analysis e modello di responsabilit&agrave; condivisa.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="dtplead.html" class="service-card">
+    <span class="service-card__icon">🏛️</span>
+    <div class="service-card__title">Leadership di trasformazione digitale</div>
+    <p class="service-card__desc">Gestione end-to-end di iniziative digitali su larga scala per il settore pubblico.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="itinframod.html" class="service-card">
+    <span class="service-card__icon">☁️</span>
+    <div class="service-card__title">Modernizzazione infrastrutture ICT</div>
+    <p class="service-card__desc">Adozione del cloud, gestione sicura delle identit&agrave; e automazione per sistemi ICT resilienti.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="eurandiprjs.html" class="service-card">
+    <span class="service-card__icon">🇪🇺</span>
+    <div class="service-card__title">Progetti europei di ricerca e innovazione</div>
+    <p class="service-card__desc">Stesura di proposte ed esecuzione per Horizon Europe, DIGITAL Europe e altri programmi UE.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="kmandod.html" class="service-card">
+    <span class="service-card__icon">📊</span>
+    <div class="service-card__title">Piattaforme di conoscenza e open data</div>
+    <p class="service-card__desc">Piattaforme di condivisione dati, osservatori e knowledge hub per una governance trasparente.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+</div>
 
 ## Link Utili
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
@@ -98,13 +167,6 @@ Consulente freelance di intelligenza artificiale e trasformazione digitale con o
 - TIPO DI ATTIVIT&Agrave;: 620200 - CONSULENZA INFORMATICA
 - COMUNE: TRENTO (TN) - ITALIA
 - INDIRIZZO: LOCALITA' CERNIDOR N.32
-- CODICE FISCALE: CMBMRC69B15A518G 
+- CODICE FISCALE: CMBMRC69B15A518G
 
-<br/><br/>
-
-<footer>
-
-&copy; 1969-2026 Marco Combetto 
-
-</footer>
 </div>

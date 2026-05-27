@@ -4,8 +4,6 @@ title: AI Act Compliance
 permalink: /aiacompliancy.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 
 # What is required for a Public Administration to be compliant when using an AI system?

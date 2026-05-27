@@ -4,8 +4,6 @@ title: Sovereign AI and AI Act Risks
 permalink: /aiarisks.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## Sovereign AI != Compliant AI
 

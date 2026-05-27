@@ -4,8 +4,6 @@ title: Knowledge Platforms and Open Data Strategy
 permalink: /kmandod.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## Knowledge Platforms and Open Data Strategy 
 

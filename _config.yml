@@ -3,5 +3,5 @@ url: "https://www.marcocombetto.com"
 baseurl: ""
 plugins:
   - jekyll-remote-theme
-title: ""
-description: ""
+title: "Marco Combetto"
+description: "AI &amp; Digital Transformation Expert — Public Sector · AI Act · Cloud"

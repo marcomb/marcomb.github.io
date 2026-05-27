@@ -3,8 +3,6 @@ layout: default
 title: AI Act Compliance Checklist
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 
 # AI Act Compliance Checklist — Italian Public Administration

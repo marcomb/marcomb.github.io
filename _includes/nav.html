@@ -1,0 +1,29 @@
+<nav id="site-nav">
+  <div class="nav-links">
+
+    <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a>
+
+    <div class="nav-dropdown">
+      <a href="{{ '/aiaservices.html' | relative_url }}" class="nav-link nav-dropdown__trigger{% if page.url contains 'aia' %} active{% endif %}">AI Act ▾</a>
+      <div class="nav-dropdown__menu">
+        <a href="{{ '/aiaservices.html' | relative_url }}"{% if page.url == '/aiaservices.html' %} class="active"{% endif %}>AI Act Consultancy</a>
+        <a href="{{ '/aiacompliancy.html' | relative_url }}"{% if page.url == '/aiacompliancy.html' %} class="active"{% endif %}>AI Compliance</a>
+        <a href="{{ '/aiarisks.html' | relative_url }}"{% if page.url == '/aiarisks.html' %} class="active"{% endif %}>Sovereign AI &amp; Risks</a>
+        <a href="{{ '/aiachecklistpa.html' | relative_url }}"{% if page.url == '/aiachecklistpa.html' %} class="active"{% endif %}>PA Checklist</a>
+      </div>
+    </div>
+
+    <a href="{{ '/aieme.html' | relative_url }}" class="nav-link{% if page.url == '/aieme.html' %} active{% endif %}">AI Advisory</a>
+    <a href="{{ '/dtplead.html' | relative_url }}" class="nav-link{% if page.url == '/dtplead.html' %} active{% endif %}">Digital Transf.</a>
+    <a href="{{ '/itinframod.html' | relative_url }}" class="nav-link{% if page.url == '/itinframod.html' %} active{% endif %}">ICT Infrastructure</a>
+    <a href="{{ '/eurandiprjs.html' | relative_url }}" class="nav-link{% if page.url == '/eurandiprjs.html' %} active{% endif %}">EU Projects</a>
+    <a href="{{ '/kmandod.html' | relative_url }}" class="nav-link{% if page.url == '/kmandod.html' %} active{% endif %}">Open Data</a>
+    <a href="{{ '/funding.html' | relative_url }}" class="nav-link{% if page.url == '/funding.html' %} active{% endif %}">Funding</a>
+
+  </div>
+
+  <div class="nav-lang">
+    <button type="button" class="language-switcher__btn" data-language-toggle="en" aria-pressed="false">EN</button>
+    <button type="button" class="language-switcher__btn" data-language-toggle="it" aria-pressed="false">IT</button>
+  </div>
+</nav>

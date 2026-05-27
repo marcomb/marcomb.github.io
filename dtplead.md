@@ -4,8 +4,6 @@ title: Digital Transformation Program Leadership
 permalink: /dtplead.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## Digital Transformation Program Leadership 
 

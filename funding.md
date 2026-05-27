@@ -4,8 +4,6 @@ title: EU and Cohesion Funding Opportunities for a GovTech SME in Trento
 permalink: /funding.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## EU and Cohesion Funding Opportunities for a GovTech SME in Trento
 

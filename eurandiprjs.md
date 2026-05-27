@@ -4,8 +4,6 @@ title: EU Research and Innovation Projects
 permalink: /eurandiprjs.html
 ---
 
-{% include language-switcher.html %}
-
 <div data-language-section="en" markdown="1">
 ## EU Research and Innovation Projects
 
