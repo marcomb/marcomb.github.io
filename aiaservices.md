@@ -33,7 +33,7 @@ Services include:
 
 ###  Resources
 
-* AIA Compliancy  [LINK](./aiacompliancy.html)
+* AIA Compliancy  [link](./aiacompliancy.html)
 * AIA PA Checklist [link](./aiachecklistpa.html)  
 
 
@@ -74,7 +74,7 @@ I servizi includono:
 
 ###  Risorse
 
-* AIA Compliancy  [LINK](./aiacompliancy.html)
+* AIA Compliancy  [link](./aiacompliancy.html)
 * AIA PA Checklist [link](./aiachecklistpa.html)  
 
 
