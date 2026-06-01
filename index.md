@@ -16,7 +16,7 @@ title: Marco Combetto
       <li>Member, <a href="https://mpai.community">MPAI Community</a></li>
       <li>Member, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
     </ul>
-    <p><strong>Focus:</strong> AI adoption, digital platforms, semantic interoperability, cloud modernization</p>
+    <p><strong>Focus:</strong> AI adoption, digital platforms, semantic interoperability, data science</p>
   </div>
 </div>
 
@@ -108,7 +108,7 @@ title: Marco Combetto
       <li>Membro, <a href="https://mpai.community">MPAI Community</a></li>
       <li>Membro, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
     </ul>
-    <p><strong>Focus:</strong> adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, modernizzazione del cloud</p>
+    <p><strong>Focus:</strong> adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, data science</p>
   </div>
 </div>
 
