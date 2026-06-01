@@ -9,6 +9,8 @@ permalink: /dsde.html
 
 End-to-end data services — from raw pipeline architecture to machine-learning-ready analytics — tailored for public administrations, research institutions, and EU-funded projects.
 
+![Data Science and Data Engineering](/images/dsde_small.svg)
+
 Services include:
 
 1. **Data Pipeline Design and Engineering**  

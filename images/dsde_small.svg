@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 210" width="280" height="210">
+  <defs>
+    <marker id="arrowhead" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <polygon points="0 0, 7 3.5, 0 7" fill="#f59e0b"/>
+    </marker>
+    <clipPath id="screenClip">
+      <rect x="149" y="63" width="86" height="60" rx="2"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="280" height="210" fill="#dbeafe" rx="10"/>
+
+  <!-- Background depth panels -->
+  <rect x="14" y="36" width="105" height="140" fill="#bfdbfe" rx="8" opacity="0.55"/>
+  <rect x="143" y="28" width="122" height="150" fill="#bfdbfe" rx="8" opacity="0.55"/>
+
+  <!-- ── DATABASE CYLINDER (left) ── -->
+  <!-- Shadow -->
+  <ellipse cx="64" cy="142" rx="33" ry="9" fill="#1e3a8a" opacity="0.15"/>
+  <!-- Body -->
+  <rect x="31" y="82" width="66" height="54" fill="#2563eb"/>
+  <!-- Top ellipse -->
+  <ellipse cx="64" cy="82" rx="33" ry="9" fill="#60a5fa"/>
+  <!-- Bottom ellipse -->
+  <ellipse cx="64" cy="136" rx="33" ry="9" fill="#1d4ed8"/>
+  <!-- Data-row stripes -->
+  <line x1="31" y1="97"  x2="97" y2="97"  stroke="#93c5fd" stroke-width="1.2" opacity="0.7"/>
+  <line x1="31" y1="111" x2="97" y2="111" stroke="#93c5fd" stroke-width="1.2" opacity="0.7"/>
+  <line x1="31" y1="125" x2="97" y2="125" stroke="#93c5fd" stroke-width="1.2" opacity="0.7"/>
+  <!-- Small stacked disk below (second table) -->
+  <rect x="42" y="148" width="44" height="18" fill="#1e40af" rx="2"/>
+  <ellipse cx="64" cy="148" rx="22" ry="5" fill="#3b82f6"/>
+  <ellipse cx="64" cy="166" rx="22" ry="5" fill="#1e40af"/>
+
+  <!-- ── PIPELINE ARROW ── -->
+  <path d="M 102 109 C 118 109, 124 94, 140 88"
+        stroke="#f59e0b" stroke-width="3" fill="none"
+        stroke-linecap="round"
+        marker-end="url(#arrowhead)"/>
+
+  <!-- ── MONITOR (right) ── -->
+  <!-- Outer bezel -->
+  <rect x="144" y="56" width="96" height="72" fill="#1e293b" rx="6"/>
+  <!-- Screen -->
+  <rect x="149" y="61" width="86" height="62" fill="#f8fafc" rx="3"/>
+
+  <!-- Bar chart on screen -->
+  <rect x="158" y="100" width="11" height="22" fill="#93c5fd" rx="1"/>
+  <rect x="174" y="89"  width="11" height="33" fill="#3b82f6" rx="1"/>
+  <rect x="190" y="80"  width="11" height="42" fill="#2563eb" rx="1"/>
+  <rect x="206" y="86"  width="11" height="36" fill="#1d4ed8" rx="1"/>
+  <!-- Chart baseline -->
+  <line x1="154" y1="122" x2="221" y2="122" stroke="#cbd5e1" stroke-width="1.2"/>
+  <!-- Trend line over bars -->
+  <polyline points="158,108 174,96 190,83 206,89 220,76"
+            fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="158" cy="108" r="2.5" fill="#f59e0b"/>
+  <circle cx="174" cy="96"  r="2.5" fill="#f59e0b"/>
+  <circle cx="190" cy="83"  r="2.5" fill="#f59e0b"/>
+  <circle cx="206" cy="89"  r="2.5" fill="#f59e0b"/>
+
+  <!-- Monitor stand -->
+  <rect x="185" y="128" width="10" height="14" fill="#64748b" rx="1"/>
+  <rect x="172" y="142" width="36" height="5" fill="#64748b" rx="2"/>
+
+  <!-- ── NEURAL NETWORK (bottom-left) ── -->
+  <!-- Connection lines first (behind nodes) -->
+  <!-- L1 → L2 -->
+  <line x1="24" y1="156" x2="55" y2="162" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="24" y1="156" x2="55" y2="180" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="24" y1="173" x2="55" y2="162" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="24" y1="173" x2="55" y2="180" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="24" y1="190" x2="55" y2="162" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="24" y1="190" x2="55" y2="180" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <!-- L2 → L3 -->
+  <line x1="61" y1="162" x2="88" y2="171" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <line x1="61" y1="180" x2="88" y2="171" stroke="#93c5fd" stroke-width="1.1" opacity="0.75"/>
+  <!-- Nodes layer 1 -->
+  <circle cx="24" cy="156" r="6" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="24" cy="173" r="6" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="24" cy="190" r="6" fill="#2563eb" stroke="#fff" stroke-width="1.5"/>
+  <!-- Nodes layer 2 -->
+  <circle cx="55" cy="162" r="6" fill="#3b82f6" stroke="#fff" stroke-width="1.5"/>
+  <circle cx="55" cy="180" r="6" fill="#3b82f6" stroke="#fff" stroke-width="1.5"/>
+  <!-- Node layer 3 (output) -->
+  <circle cx="88" cy="171" r="7" fill="#f59e0b" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- ── SCATTER PLOT (top-left corner) ── -->
+  <!-- Trend line first -->
+  <line x1="22" y1="62" x2="88" y2="22" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.8"/>
+  <!-- Data points -->
+  <circle cx="28" cy="58" r="3.5" fill="#1d4ed8" opacity="0.85"/>
+  <circle cx="38" cy="48" r="3.5" fill="#2563eb" opacity="0.85"/>
+  <circle cx="50" cy="38" r="3.5" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="44" cy="52" r="3.5" fill="#60a5fa" opacity="0.85"/>
+  <circle cx="60" cy="30" r="3.5" fill="#1d4ed8" opacity="0.85"/>
+  <circle cx="70" cy="40" r="3.5" fill="#2563eb" opacity="0.85"/>
+  <circle cx="78" cy="25" r="3.5" fill="#3b82f6" opacity="0.85"/>
+  <circle cx="58" cy="46" r="3.5" fill="#93c5fd" opacity="0.85"/>
+
+  <!-- ── GEAR ICON (engineering, top-right) ── -->
+  <g transform="translate(244, 50)">
+    <!-- Gear teeth -->
+    <rect x="-4" y="-20" width="8" height="8"  fill="#2563eb" rx="1.5"/>
+    <rect x="-4" y="12"  width="8" height="8"  fill="#2563eb" rx="1.5"/>
+    <rect x="12"  y="-4" width="8" height="8"  fill="#2563eb" rx="1.5"/>
+    <rect x="-20" y="-4" width="8" height="8"  fill="#2563eb" rx="1.5"/>
+    <rect x="7"   y="-18" width="8" height="8" fill="#2563eb" rx="1.5" transform="rotate(45)"/>
+    <rect x="-15" y="10"  width="8" height="8" fill="#2563eb" rx="1.5" transform="rotate(45)"/>
+    <rect x="10"  y="10"  width="8" height="8" fill="#2563eb" rx="1.5" transform="rotate(-45)"/>
+    <rect x="-18" y="-18" width="8" height="8" fill="#2563eb" rx="1.5" transform="rotate(-45)"/>
+    <!-- Gear body -->
+    <circle cx="0" cy="0" r="14" fill="#2563eb"/>
+    <circle cx="0" cy="0" r="7"  fill="#dbeafe"/>
+    <circle cx="0" cy="0" r="3"  fill="#2563eb"/>
+  </g>
+
+  <!-- ── CODE SYMBOL (bottom-right, decorative) ── -->
+  <text x="148" y="185" font-family="'Courier New', monospace" font-size="20"
+        fill="#1d4ed8" font-weight="bold" opacity="0.28">&lt;/&gt;</text>
+
+  <!-- Second pipeline arrow from neural net toward chart area -->
+  <path d="M 98 171 C 112 171, 120 155, 136 148"
+        stroke="#f59e0b" stroke-width="2.2" fill="none"
+        stroke-linecap="round"
+        marker-end="url(#arrowhead)"/>
+
+</svg>
