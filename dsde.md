@@ -51,6 +51,8 @@ Public institutions generate vast amounts of data — from administrative record
 
 Servizi dati end-to-end — dall'architettura delle pipeline grezze all'analisi pronta per il machine learning — progettati per pubbliche amministrazioni, enti di ricerca e progetti finanziati dall'UE.
 
+![Data Science e Data Engineering](/images/dsde_small.svg)
+
 I servizi includono:
 
 1. **Progettazione e ingegneria delle pipeline di dati**  
