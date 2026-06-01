@@ -65,6 +65,12 @@ title: Marco Combetto
     <p class="service-card__desc">Data-sharing platforms, observatories, and knowledge hubs for transparent governance.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
+  <a href="dsde.html" class="service-card">
+    <span class="service-card__icon">🧮</span>
+    <div class="service-card__title">Data Science and Data Engineering</div>
+    <p class="service-card__desc">End-to-end data pipelines, analytics, and machine-learning solutions for data-driven public institutions.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
 </div>
 
 ## Links
@@ -147,6 +153,12 @@ title: Marco Combetto
     <span class="service-card__icon">📊</span>
     <div class="service-card__title">Piattaforme di conoscenza e open data</div>
     <p class="service-card__desc">Piattaforme di condivisione dati, osservatori e knowledge hub per una governance trasparente.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="dsde.html" class="service-card">
+    <span class="service-card__icon">🧮</span>
+    <div class="service-card__title">Data Science e Data Engineering</div>
+    <p class="service-card__desc">Pipeline dati end-to-end, analisi e soluzioni di machine learning per istituzioni pubbliche data-driven.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
 </div>
