@@ -122,33 +122,3 @@
     });
   });
 })();
-
-/* ── Mobile nav hamburger ───────────────────────────────────────── */
-(function () {
-  var hamburger = document.getElementById('nav-hamburger');
-  var siteNav = document.getElementById('site-nav');
-  if (!hamburger || !siteNav) return;
-
-  hamburger.addEventListener('click', function () {
-    var isOpen = siteNav.classList.toggle('is-open');
-    hamburger.setAttribute('aria-expanded', String(isOpen));
-  });
-
-  document.addEventListener('click', function (e) {
-    if (!siteNav.contains(e.target)) {
-      siteNav.classList.remove('is-open');
-      hamburger.setAttribute('aria-expanded', 'false');
-    }
-  });
-
-  /* Mobile sub-dropdown: tap trigger to toggle */
-  var dropdownTriggers = document.querySelectorAll('.nav-dropdown__trigger');
-  dropdownTriggers.forEach(function (trigger) {
-    trigger.addEventListener('click', function (e) {
-      if (window.innerWidth > 720) return;
-      e.preventDefault();
-      var dropdown = trigger.closest('.nav-dropdown');
-      if (dropdown) dropdown.classList.toggle('is-open');
-    });
-  });
-})();
