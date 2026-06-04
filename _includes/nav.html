@@ -4,16 +4,15 @@
     <a href="{{ '/' | relative_url }}" class="nav-link{% if page.url == '/' %} active{% endif %}">Home</a>
 
     <div class="nav-dropdown">
-      <a href="{{ '/aiaservices.html' | relative_url }}" class="nav-link nav-dropdown__trigger{% if page.url contains 'aia' %} active{% endif %}">AI Act ▾</a>
-      <div class="nav-dropdown__menu">
-        <a href="{{ '/aiaservices.html' | relative_url }}"{% if page.url == '/aiaservices.html' %} class="active"{% endif %}>AI Act Consultancy</a>
+      <a href="{{ '/aiaservices.html' | relative_url }}" class="nav-link nav-dropdown__trigger{% if page.url contains 'aia' %} active{% endif %}">AI Advisory▾</a>
+      <div class="nav-dropdown__menu">        
+        <a href="{{ '/aieme.html' | relative_url }}" class="nav-link{% if page.url == '/aieme.html' %} active{% endif %}">AI Advisory</a>
+        <a href="{{ '/aiaservices.html' | relative_url }}"{% if page.url == '/aiaservices.html' %} class="active"{% endif %}>AI Act</a>
         <a href="{{ '/aiacompliancy.html' | relative_url }}"{% if page.url == '/aiacompliancy.html' %} class="active"{% endif %}>AI Compliance</a>
         <a href="{{ '/aiarisks.html' | relative_url }}"{% if page.url == '/aiarisks.html' %} class="active"{% endif %}>Sovereign AI &amp; Risks</a>
         <a href="{{ '/aiachecklistpa.html' | relative_url }}"{% if page.url == '/aiachecklistpa.html' %} class="active"{% endif %}>PA Checklist</a>
       </div>
     </div>
-
-    <a href="{{ '/aieme.html' | relative_url }}" class="nav-link{% if page.url == '/aieme.html' %} active{% endif %}">AI Advisory</a>
     <a href="{{ '/dsde.html' | relative_url }}" class="nav-link{% if page.url == '/dsde.html' %} active{% endif %}">Data Science</a>
     <a href="{{ '/dtplead.html' | relative_url }}" class="nav-link{% if page.url == '/dtplead.html' %} active{% endif %}">DT</a>
     <!--a href="{{ '/itinframod.html' | relative_url }}" class="nav-link{% if page.url == '/itinframod.html' %} active{% endif %}">ICT Infrastructure</a-->
