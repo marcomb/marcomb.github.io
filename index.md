@@ -61,7 +61,7 @@ title: Marco Combetto
     <p class="service-card__desc">Data-sharing platforms, observatories, and knowledge hubs for transparent governance.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
-  <a href="itinframod.html" class="service-card">
+  <!--a href="itinframod.html" class="service-card">
     <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
     <div class="service-card__title">ICT Infrastructure Modernization</div>
     <p class="service-card__desc">Cloud adoption, secure identity management, and automation for resilient ICT systems.</p>
@@ -72,7 +72,7 @@ title: Marco Combetto
     <div class="service-card__title">EU Research and Innovation Projects</div>
     <p class="service-card__desc">Proposal development and execution for Horizon Europe, DIGITAL Europe, and EU-funded programmes.</p>
     <span class="service-card__cta">Learn more →</span>
-  </a>
+  </a-->
 </div>
 
 ## Links
@@ -153,7 +153,7 @@ title: Marco Combetto
     <p class="service-card__desc">Piattaforme di condivisione dati, osservatori e knowledge hub per una governance trasparente.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
-   <a href="itinframod.html" class="service-card">
+   <!--a href="itinframod.html" class="service-card">
     <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
     <div class="service-card__title">Modernizzazione infrastrutture ICT</div>
     <p class="service-card__desc">Adozione del cloud, gestione sicura delle identit&agrave; e automazione per sistemi ICT resilienti.</p>
@@ -164,7 +164,7 @@ title: Marco Combetto
     <div class="service-card__title">Progetti europei di ricerca e innovazione</div>
     <p class="service-card__desc">Stesura di proposte ed esecuzione per Horizon Europe, DIGITAL Europe e altri programmi UE.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
-  </a>
+  </a-->
 </div>
 
 ## Link Utili
