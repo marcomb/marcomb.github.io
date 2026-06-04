@@ -77,6 +77,7 @@ title: Marco Combetto
 
 ## Links
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
+- [Github](https://github.com/marcomb)
 - [ResearchGate](https://www.researchgate.net/profile/Marco-Combetto)
 - [EU Publications](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)
 - [Other Publications](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
@@ -169,6 +170,7 @@ title: Marco Combetto
 
 ## Link Utili
 - [Linkedin](https://www.linkedin.com/in/marcomb/)
+- [Github](https://github.com/marcomb)
 - [ResearchGate](https://www.researchgate.net/profile/Marco-Combetto)
 - [Pubblicazioni UE](https://publications.jrc.ec.europa.eu/repository/search/?filter=CONTRIBUTOR:COMBETTO%20Marco)
 - [Altre pubblicazioni](https://scholar.google.com/citations?user=VA6U5LgAAAAJ&hl=en)
