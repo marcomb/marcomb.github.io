@@ -8,7 +8,7 @@ title: Marco Combetto
 <div class="profile-header">
   <img src="images/marcomb.png" alt="Marco Combetto" class="profile-photo">
   <div class="profile-bio">
-    <p>Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector innovation, cloud-native platforms, and AI-enabled solutions.</p>
+    <p>Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector data-driven innovation and AI-enabled solutions.</p>
     <ul>
       <li>Independent Consultant</li>
       <li>Teacher, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
@@ -16,7 +16,7 @@ title: Marco Combetto
       <li>Member, <a href="https://mpai.community">MPAI Community</a></li>
       <li>Member, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
     </ul>
-    <p><strong>Focus:</strong> AI adoption, digital platforms, semantic interoperability, data science</p>
+    <p><strong>Focus:</strong> AI adoption, digital platforms, data science, semantic interoperability</p>
   </div>
 </div>
 
@@ -29,6 +29,12 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-microchip"></i></div>
     <div class="service-card__title">AI and Emerging Tech Advisory</div>
     <p class="service-card__desc">Strategic guidance for governments to evaluate, adopt, and scale AI responsibly.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="dsde.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+    <div class="service-card__title">Data Science and Data Engineering</div>
+    <p class="service-card__desc">End-to-end data pipelines, analytics, and machine-learning solutions for data-driven public institutions.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
   <a href="aiaservices.html" class="service-card">
@@ -49,6 +55,12 @@ title: Marco Combetto
     <p class="service-card__desc">End-to-end management of large-scale digital initiatives for the public sector.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
+  <a href="kmandod.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
+    <div class="service-card__title">Knowledge Platforms and Open Data</div>
+    <p class="service-card__desc">Data-sharing platforms, observatories, and knowledge hubs for transparent governance.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
   <a href="itinframod.html" class="service-card">
     <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
     <div class="service-card__title">ICT Infrastructure Modernization</div>
@@ -59,18 +71,6 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-flask"></i></div>
     <div class="service-card__title">EU Research and Innovation Projects</div>
     <p class="service-card__desc">Proposal development and execution for Horizon Europe, DIGITAL Europe, and EU-funded programmes.</p>
-    <span class="service-card__cta">Learn more →</span>
-  </a>
-  <a href="kmandod.html" class="service-card">
-    <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
-    <div class="service-card__title">Knowledge Platforms and Open Data</div>
-    <p class="service-card__desc">Data-sharing platforms, observatories, and knowledge hubs for transparent governance.</p>
-    <span class="service-card__cta">Learn more →</span>
-  </a>
-  <a href="dsde.html" class="service-card">
-    <div class="service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
-    <div class="service-card__title">Data Science and Data Engineering</div>
-    <p class="service-card__desc">End-to-end data pipelines, analytics, and machine-learning solutions for data-driven public institutions.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
 </div>
@@ -100,7 +100,7 @@ title: Marco Combetto
 <div class="profile-header">
   <img src="images/marcomb.png" alt="Marco Combetto" class="profile-photo">
   <div class="profile-bio">
-    <p>Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione del settore pubblico, nelle piattaforme cloud-native e nelle soluzioni abilitate dall'IA.</p>
+    <p>Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione data-driven del settore pubblico e nelle soluzioni abilitate dall'IA.</p>
     <ul>
       <li>Consulente indipendente</li>
       <li>Insegnante Informatica, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
@@ -108,7 +108,7 @@ title: Marco Combetto
       <li>Membro, <a href="https://mpai.community">MPAI Community</a></li>
       <li>Membro, <a href="https://interoperable-europe.ec.europa.eu/collection/public-sector-tech-watch">Public Sector Tech Watch</a></li>
     </ul>
-    <p><strong>Focus:</strong> adozione dell'IA, piattaforme digitali, interoperabilit&agrave; semantica, data science</p>
+    <p><strong>Focus:</strong> adozione dell'IA, piattaforme digitali, data science, interoperabilit&agrave; semantica</p>
   </div>
 </div>
 
@@ -121,6 +121,12 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-microchip"></i></div>
     <div class="service-card__title">Consulenza su IA e tecnologie emergenti</div>
     <p class="service-card__desc">Guida strategica e tecnica per l'adozione responsabile dell'IA nelle pubbliche amministrazioni.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+   <a href="dsde.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
+    <div class="service-card__title">Data Science e Data Engineering</div>
+    <p class="service-card__desc">Pipeline dati end-to-end, analisi e soluzioni di machine learning per istituzioni pubbliche data-driven.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
   <a href="aiaservices.html" class="service-card">
@@ -141,7 +147,13 @@ title: Marco Combetto
     <p class="service-card__desc">Gestione end-to-end di iniziative digitali su larga scala per il settore pubblico.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
-  <a href="itinframod.html" class="service-card">
+  <a href="kmandod.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
+    <div class="service-card__title">Piattaforme di conoscenza e open data</div>
+    <p class="service-card__desc">Piattaforme di condivisione dati, osservatori e knowledge hub per una governance trasparente.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+   <a href="itinframod.html" class="service-card">
     <div class="service-card__icon"><i class="fa-solid fa-server"></i></div>
     <div class="service-card__title">Modernizzazione infrastrutture ICT</div>
     <p class="service-card__desc">Adozione del cloud, gestione sicura delle identit&agrave; e automazione per sistemi ICT resilienti.</p>
@@ -151,18 +163,6 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-flask"></i></div>
     <div class="service-card__title">Progetti europei di ricerca e innovazione</div>
     <p class="service-card__desc">Stesura di proposte ed esecuzione per Horizon Europe, DIGITAL Europe e altri programmi UE.</p>
-    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
-  </a>
-  <a href="kmandod.html" class="service-card">
-    <div class="service-card__icon"><i class="fa-solid fa-database"></i></div>
-    <div class="service-card__title">Piattaforme di conoscenza e open data</div>
-    <p class="service-card__desc">Piattaforme di condivisione dati, osservatori e knowledge hub per una governance trasparente.</p>
-    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
-  </a>
-  <a href="dsde.html" class="service-card">
-    <div class="service-card__icon"><i class="fa-solid fa-chart-line"></i></div>
-    <div class="service-card__title">Data Science e Data Engineering</div>
-    <p class="service-card__desc">Pipeline dati end-to-end, analisi e soluzioni di machine learning per istituzioni pubbliche data-driven.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
 </div>
