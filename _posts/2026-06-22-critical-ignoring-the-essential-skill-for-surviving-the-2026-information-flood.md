@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Critical Ignoring: The Essential Skill for Surviving the 2026 Information Flood"
-date: 2026-06-22 01:28:57 
+date: 2026-06-21 23:00:00 +0000
 categories: blog
 image: https://miro.medium.com/v2/resize:fit:1200/1*brwRLhKGql7rrcHk9s0SGA.png
 source_url: https://medium.com/habits-for-success/critical-ignoring-the-essential-skill-for-surviving-the-2026-information-flood-9dd9cb39a3e1
