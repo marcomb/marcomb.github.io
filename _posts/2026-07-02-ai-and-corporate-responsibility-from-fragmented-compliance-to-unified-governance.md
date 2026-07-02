@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI and corporate responsibility – From fragmented compliance to unified governance"
-date: 2026-07-02 07:12:24 +0000
+date: 2026-07-02 07:49:36 +0000
 categories: blog
 image: https://static.cambridge.org/covers/CFL_0_0_0/cambridge_forum on ai: law and governance.jpg?send-full-size-image=true
 source_url: https://dx.doi.org/10.1017/cfl.2026.10046?rft_dat=source%3Ddrss
