@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Technical Support Instrument - Performance"
-date: 2026-07-03 21:47:04 +0000
+date: 2026-07-03 21:47:20 +0000
 categories: blog
 image: https://commission.europa.eu/profiles/contrib/ewcms/modules/ewcms_seo/assets/images/ec-socialmedia-fallback.png
 source_url: https://commission.europa.eu/strategy-and-policy/eu-budget/performance-and-reporting/programme-performance-statements/technical-support-instrument-performance_en
