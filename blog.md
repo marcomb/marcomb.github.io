@@ -63,6 +63,14 @@ title: Blog
 }
 </style>
 
+<input type="search" id="blog-search" placeholder="⌕ Search posts…" autocomplete="off"
+  style="width:100%; box-sizing:border-box; padding:10px 12px; margin:6px 0 18px;
+         border:1px solid rgba(255,255,255,0.18); border-radius:8px;
+         background:rgba(255,255,255,0.06); color:inherit; font:inherit; font-size:14px;">
+<div id="blog-search-empty" style="display:none; opacity:.6; font-size:13px; padding:14px 0;">
+  No posts match “<span id="blog-search-term"></span>”.
+</div>
+
 <ul class="blog-index">
 {% for post in site.posts %}
   <li>
@@ -83,3 +91,24 @@ title: Blog
   </li>
 {% endfor %}
 </ul>
+
+<script>
+(function(){
+  var input = document.getElementById('blog-search');
+  if(!input) return;
+  var cards = [].slice.call(document.querySelectorAll('.blog-index > li'));
+  var empty = document.getElementById('blog-search-empty');
+  var term  = document.getElementById('blog-search-term');
+  function apply(){
+    var q = input.value.trim().toLowerCase(), shown = 0;
+    cards.forEach(function(li){
+      var hit = !q || li.textContent.toLowerCase().indexOf(q) !== -1;
+      li.style.display = hit ? '' : 'none';
+      if(hit) shown++;
+    });
+    if(empty){ empty.style.display = (q && shown===0) ? 'block' : 'none'; }
+    if(term){ term.textContent = input.value.trim(); }
+  }
+  input.addEventListener('input', apply);
+})();
+</script>
