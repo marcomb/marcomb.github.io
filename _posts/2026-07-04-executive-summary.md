@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Executive summary"
+title: "Preliminary Report of the UN Independent International Scientific Panel on AI"
 date: 2026-07-04 13:09:24 +0000
 categories: blog
 source_url: "https://www.un.org/independent-international-scientific-panel-ai/sites/default/files/2026-07/en_Preliminary%20Report_.pdf"
