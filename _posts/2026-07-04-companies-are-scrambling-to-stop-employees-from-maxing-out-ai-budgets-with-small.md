@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Companies are scrambling to stop employees from maxing out AI budgets with small tasks | TechCrunch"
-date: 2026-07-04 07:15:13 +0000
+date: 2026-07-04 07:15:57 +0000
 categories: blog
 image: "https://techcrunch.com/wp-content/uploads/2026/03/claude-app-centered-in-ai-apps-GettyImages-2167861906.jpg?resize=1200,801"
 source_url: "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/"
