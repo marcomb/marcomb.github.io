@@ -18,4 +18,4 @@ How do we balance the risk of an AI helping an attacker without crippling the ab
 
 #CyberSecurity #ArtificialIntelligence #TechPolicy #InfoSec #AIStrategy
 
-https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything
+http://example.com](https://simonwillison.net/2026/Jun/16/fable-5-export-controls/#atom-everything
