@@ -11,6 +11,7 @@ title: Marco Combetto
     <p>Freelance AI and Digital Transformation Expert with 25+ years of experience in public sector data-driven innovation and AI-enabled solutions.</p>
     <ul>
       <li>Independent Consultant</li>
+      <li>Freelance Project Manager, Digital Identity, <a href="https://taxation-customs.ec.europa.eu/">European Commission &ndash; DG TAXUD</a></li>
       <li>Teacher, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
       <li>Founder and Owner, <a href="https://www.tool80.it">TOOL80 srl</a></li>
       <li>Member, <a href="https://mpai.community">MPAI Community</a></li>
@@ -29,6 +30,12 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-microchip"></i></div>
     <div class="service-card__title">AI and Emerging Tech Advisory</div>
     <p class="service-card__desc">Strategic guidance for governments to evaluate, adopt, and scale AI responsibly.</p>
+    <span class="service-card__cta">Learn more →</span>
+  </a>
+  <a href="digitalidentity.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-fingerprint"></i></div>
+    <div class="service-card__title">Digital Identity</div>
+    <p class="service-card__desc">Federated identity and access management for cross-border public services, from strategy to project delivery.</p>
     <span class="service-card__cta">Learn more →</span>
   </a>
   <a href="dsde.html" class="service-card">
@@ -104,6 +111,7 @@ title: Marco Combetto
     <p>Consulente freelance di intelligenza artificiale e trasformazione digitale con oltre 25 anni di esperienza nell'innovazione data-driven del settore pubblico e nelle soluzioni abilitate dall'IA.</p>
     <ul>
       <li>Consulente indipendente</li>
+      <li>Project Manager freelance, Identit&agrave; digitale, <a href="https://taxation-customs.ec.europa.eu/">Commissione europea &ndash; DG TAXUD</a></li>
       <li>Insegnante Informatica, <a href="https://buonarroti.tn.it/">ITT Buonarroti</a></li>
       <li>Founder and Owner, <a href="https://www.tool80.it">TOOL80 srl</a></li>
       <li>Membro, <a href="https://mpai.community">MPAI Community</a></li>
@@ -122,6 +130,12 @@ title: Marco Combetto
     <div class="service-card__icon"><i class="fa-solid fa-microchip"></i></div>
     <div class="service-card__title">Consulenza su IA e tecnologie emergenti</div>
     <p class="service-card__desc">Guida strategica e tecnica per l'adozione responsabile dell'IA nelle pubbliche amministrazioni.</p>
+    <span class="service-card__cta">Scopri di pi&ugrave; →</span>
+  </a>
+  <a href="digitalidentity.html" class="service-card">
+    <div class="service-card__icon"><i class="fa-solid fa-fingerprint"></i></div>
+    <div class="service-card__title">Identit&agrave; digitale</div>
+    <p class="service-card__desc">Identity and access management federato per servizi pubblici transfrontalieri, dalla strategia alla gestione dei progetti.</p>
     <span class="service-card__cta">Scopri di pi&ugrave; →</span>
   </a>
    <a href="dsde.html" class="service-card">

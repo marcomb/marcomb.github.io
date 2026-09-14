@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 210" width="280" height="210">
+  <!-- Background -->
+  <rect width="280" height="210" fill="#dbeafe" rx="10"/>
+
+  <!-- Background depth panels -->
+  <rect x="14" y="36" width="130" height="140" fill="#bfdbfe" rx="8" opacity="0.55"/>
+  <rect x="160" y="28" width="105" height="150" fill="#bfdbfe" rx="8" opacity="0.55"/>
+
+  <!-- ── FEDERATION LINKS (behind nodes) ── -->
+  <g stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" fill="none">
+    <line x1="212" y1="103" x2="190" y2="58"/>
+    <line x1="212" y1="103" x2="240" y2="62"/>
+    <line x1="212" y1="103" x2="186" y2="150"/>
+    <line x1="212" y1="103" x2="242" y2="146"/>
+    <path d="M 140 103 C 160 103, 172 103, 196 103" stroke-dasharray="5 4"/>
+  </g>
+
+  <!-- ── ID CARD (left) ── -->
+  <ellipse cx="80" cy="152" rx="56" ry="7" fill="#1e3a8a" opacity="0.15"/>
+  <rect x="24" y="64" width="116" height="80" fill="#2563eb" rx="8"/>
+  <rect x="24" y="64" width="116" height="18" fill="#1d4ed8" rx="8"/>
+  <rect x="24" y="74" width="116" height="8" fill="#1d4ed8"/>
+  <!-- Photo -->
+  <rect x="34" y="92" width="34" height="42" fill="#f8fafc" rx="3"/>
+  <circle cx="51" cy="106" r="7" fill="#93c5fd"/>
+  <path d="M 39 132 C 39 119, 63 119, 63 132 Z" fill="#93c5fd"/>
+  <!-- Text lines -->
+  <rect x="76" y="94"  width="52" height="6" fill="#93c5fd" rx="2"/>
+  <rect x="76" y="106" width="40" height="5" fill="#60a5fa" rx="2"/>
+  <rect x="76" y="117" width="46" height="5" fill="#60a5fa" rx="2"/>
+  <!-- Chip -->
+  <rect x="104" y="126" width="22" height="12" fill="#f59e0b" rx="2"/>
+  <line x1="115" y1="126" x2="115" y2="138" stroke="#b45309" stroke-width="1"/>
+
+  <!-- ── HUB SHIELD (centre-right) ── -->
+  <path d="M 212 84 L 228 90 L 228 104 C 228 114, 221 120, 212 124 C 203 120, 196 114, 196 104 L 196 90 Z"
+        fill="#1e293b"/>
+  <!-- Keyhole -->
+  <circle cx="212" cy="100" r="4.5" fill="#f8fafc"/>
+  <rect x="210" y="102" width="4" height="10" fill="#f8fafc" rx="1"/>
+
+  <!-- ── FEDERATED NODES ── -->
+  <circle cx="190" cy="54"  r="10" fill="#3b82f6" stroke="#f8fafc" stroke-width="2"/>
+  <circle cx="240" cy="58"  r="10" fill="#2563eb" stroke="#f8fafc" stroke-width="2"/>
+  <circle cx="186" cy="154" r="10" fill="#1d4ed8" stroke="#f8fafc" stroke-width="2"/>
+  <circle cx="242" cy="150" r="10" fill="#3b82f6" stroke="#f8fafc" stroke-width="2"/>
+
+  <!-- Check mark badge -->
+  <circle cx="136" cy="68" r="11" fill="#f59e0b"/>
+  <polyline points="131,68 135,72 142,64" fill="none" stroke="#f8fafc" stroke-width="2.5"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
